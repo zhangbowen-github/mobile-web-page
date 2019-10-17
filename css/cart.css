@@ -37,12 +37,13 @@ body {
 }
 .container header div a {
   float: right;
-  width: 0.4rem;
+  width: 0.41333333rem;
+  height: 0.4rem;
   margin-top: 0.06rem;
   margin-right: 0.45333333rem;
-}
-.container header div a img {
-  width: 100%;
+  background: url("../images/图标.png") no-repeat;
+  background-position: -0.8rem -0.08rem;
+  background-size: 2.73333333rem;
 }
 .container header div b {
   position: absolute;
@@ -50,8 +51,9 @@ body {
   height: 0.4rem;
   left: 0.54666667rem;
   top: 0.06666667rem;
-  background: url("../images/左箭头.png");
-  background-size: 100%;
+  background: url("../images/图标.png") no-repeat;
+  background-position: -2.13333333rem -0.12rem;
+  background-size: 2.73333333rem;
 }
 .container .indent {
   width: 8.8rem;
