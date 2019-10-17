@@ -1,0 +1,274 @@
+//页面初始化；
+body {
+  width: 750/75rem;
+  margin: 0 auto;
+
+}
+
+@no:10;
+@media screen and (max-width: 320px){
+  html{
+    font-size: 320px/@no !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html{
+    font-size: 750px/@no !important;
+  }
+}
+
+
+//版心；
+.container {
+  width: 750/75rem;
+  height: 1400/75rem;
+  background-color: #f6f6f6;
+
+  //头部开始；
+  header {
+    width: 750/75rem;
+    height: 290/75rem;
+    overflow: hidden;
+    background-color: #5ca9f6;
+    .top {
+        padding-left: 35/75rem;
+        margin-top: 66/75rem;
+      span {
+        display: inline-block;
+        font-size: 40/75rem;
+        line-height: 40/75rem;
+        color: #fff;
+      }
+      a {
+        float: right;
+        width: 30/75rem;
+        height: 31/75rem;
+        margin-right: 36/75rem;
+        margin-top: 5/75rem;
+        background: url("../images/消息.png") no-repeat;
+        background-size: 100%;
+        background-position: 0 0;
+      }
+    }
+    .bottom {
+      height: 123/75rem;
+      padding-left: 35/75rem;
+      margin-top: 37/75rem;
+      position: relative;
+      div {
+        float: left;
+      }
+      .left {
+        width: 123/75rem;
+        height: 123/75rem;
+        margin-right: 20/75rem;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+      .left+div {
+        h5 {
+          font-size: 32/75rem;
+          line-height: 32/75rem;
+          height: 52/75rem;
+          margin: 0;
+          margin-top: 30/75rem;
+          color: #fff;
+        }
+        p {
+          font-size: 23/75rem;
+          line-height: 23/75rem;
+          margin: 0;
+          color: #fff;
+        }
+        a {
+          position: absolute;
+          width: 91/75rem;
+          height: 74/75rem;
+          background: url("../images/会员卡.png") no-repeat;
+          background-size: 100%;
+          right: 0;
+          top: (123-74)/2/75rem;
+        }
+      }
+    }
+
+  }
+  //头部结束；
+
+  //我的红包开始
+  .money {
+    width: 710/75rem;
+    height: 156/75rem;
+    margin: 0 auto;
+    margin-top: 27/75rem;
+    margin-bottom: 21/75rem;
+    display: flex;
+    border-radius: 12/75rem;
+    background-color: #fff;
+    box-shadow: 0 0 15/75rem #ccc;
+    a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 54/75rem;
+        height: 58/75rem;
+      }
+      span {
+        font-size: 22/75rem;
+        line-height: 22/75rem;
+        text-align: center;
+        color: #333;
+        margin-top: 20/75rem;
+
+      }
+    }
+  }
+  //我的红包结束；
+
+  //列表开始；
+  .list {
+    width: 710/75rem;
+    margin: 0 auto;
+    //margin-bottom: 380/75rem;
+    border-radius: 12/75rem;
+    background-color: #fff;
+    box-shadow: 0 0 15/75rem #ccc;
+    ul {
+      padding: 0  32/75rem 0 34/75rem;
+      li {
+        display: flex;
+        width: 100%;
+        height: 91/75rem;
+        position: relative;
+        align-items: center;
+        border-bottom: 1/75rem solid #e2e2e2;
+        div {
+          margin-left: 8/75rem;
+          margin-right: 14/75rem;
+        }
+        img {
+          width: 100%;
+
+        }
+        a {
+          font-size: 26/75rem;
+          color: #333;
+          text-decoration: none;
+        }
+        span {
+          position: absolute;
+          width: 9/75rem;
+          height: 20/75rem;
+          top: (91-20)/2/75rem;
+          right: 11/75rem;
+          background: url("../images/右箭头 (2).png") no-repeat;
+          background-size: 100%;
+        }
+
+      }
+      li:last-child {
+        border: 0;
+        div {
+          width: 32/75rem;
+        }
+      }
+      li:nth-of-type(1) {
+        div {
+          width: 33/75rem;
+        }
+      }
+      li:nth-of-type(2) {
+        div {
+          width: 31/75rem;
+        }
+      }
+      li:nth-of-type(3) {
+        div {
+          width: 28/75rem;
+        }
+      }
+      li:nth-of-type(4) {
+        div {
+          width: 30/75rem;
+        }
+      }
+    }
+  }
+  //列表结束；
+
+  //底部导航栏
+  .bot {
+    width: 750/75rem;
+    height: 98/75rem;
+    display: flex;
+    background-color: #fff;
+    border-top: 1/75rem solid #e2e2e2;
+    position: fixed;
+    bottom: 0;
+
+    > div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        margin-top: 21/75rem;
+        margin-bottom: 11/75rem;
+        width: 37/75rem;
+        height: 37/75rem;
+        background: url("../images/导航栏.png") no-repeat;
+        background-size: 626/75rem;
+      }
+
+      span {
+        font-size: 22/75rem;
+        color: #c4c4c4;
+        text-align: center;
+        line-height: 22/75rem;
+      }
+    }
+
+    > div:nth-child(1) {
+      div {
+        background: url("../images/首页.png") no-repeat;
+        background-size: 36/75rem;
+        background-position: 0 0;
+      }
+    }
+    > div:nth-child(2) {
+      div {
+        background-position: -147/75rem 0;
+      }
+    }
+
+    > div:nth-child(3) {
+      div {
+        background-position: -300/75rem 0;
+      }
+    }
+    > div:nth-child(4) {
+      div {
+        background-position: -440/75rem 0;
+      }
+    }
+    > div:nth-child(5) {
+      div {
+        background: url("../images/我的.png") no-repeat;
+        background-size: 33/75rem;
+        background-position: 2/75rem 0;
+      }
+      span {
+        color: #5aa5f0;
+      }
+    }
+  }
+
+
+
+
+}

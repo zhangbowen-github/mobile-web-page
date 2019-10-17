@@ -1,0 +1,222 @@
+body {
+  width: 10rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+.container {
+  width: 10rem;
+  height: 18.66666667rem;
+  background-color: #f6f6f6;
+}
+.container header {
+  width: 10rem;
+  height: 3.86666667rem;
+  overflow: hidden;
+  background-color: #5ca9f6;
+}
+.container header .top {
+  padding-left: 0.46666667rem;
+  margin-top: 0.88rem;
+}
+.container header .top span {
+  display: inline-block;
+  font-size: 0.53333333rem;
+  line-height: 0.53333333rem;
+  color: #fff;
+}
+.container header .top a {
+  float: right;
+  width: 0.4rem;
+  height: 0.41333333rem;
+  margin-right: 0.48rem;
+  margin-top: 0.06666667rem;
+  background: url("../images/消息.png") no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+.container header .bottom {
+  height: 1.64rem;
+  padding-left: 0.46666667rem;
+  margin-top: 0.49333333rem;
+  position: relative;
+}
+.container header .bottom div {
+  float: left;
+}
+.container header .bottom .left {
+  width: 1.64rem;
+  height: 1.64rem;
+  margin-right: 0.26666667rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.container header .bottom .left + div h5 {
+  font-size: 0.42666667rem;
+  line-height: 0.42666667rem;
+  height: 0.69333333rem;
+  margin: 0;
+  margin-top: 0.4rem;
+  color: #fff;
+}
+.container header .bottom .left + div p {
+  font-size: 0.30666667rem;
+  line-height: 0.30666667rem;
+  margin: 0;
+  color: #fff;
+}
+.container header .bottom .left + div a {
+  position: absolute;
+  width: 1.21333333rem;
+  height: 0.98666667rem;
+  background: url("../images/会员卡.png") no-repeat;
+  background-size: 100%;
+  right: 0;
+  top: 0.32666667rem;
+}
+.container .money {
+  width: 9.46666667rem;
+  height: 2.08rem;
+  margin: 0 auto;
+  margin-top: 0.36rem;
+  margin-bottom: 0.28rem;
+  display: flex;
+  border-radius: 0.16rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.2rem #ccc;
+}
+.container .money a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .money a img {
+  width: 0.72rem;
+  height: 0.77333333rem;
+}
+.container .money a span {
+  font-size: 0.29333333rem;
+  line-height: 0.29333333rem;
+  text-align: center;
+  color: #333;
+  margin-top: 0.26666667rem;
+}
+.container .list {
+  width: 9.46666667rem;
+  margin: 0 auto;
+  border-radius: 0.16rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.2rem #ccc;
+}
+.container .list ul {
+  padding: 0 0.42666667rem 0 0.45333333rem;
+}
+.container .list ul li {
+  display: flex;
+  width: 100%;
+  height: 1.21333333rem;
+  position: relative;
+  align-items: center;
+  border-bottom: 0.01333333rem solid #e2e2e2;
+}
+.container .list ul li div {
+  margin-left: 0.10666667rem;
+  margin-right: 0.18666667rem;
+}
+.container .list ul li img {
+  width: 100%;
+}
+.container .list ul li a {
+  font-size: 0.34666667rem;
+  color: #333;
+  text-decoration: none;
+}
+.container .list ul li span {
+  position: absolute;
+  width: 0.12rem;
+  height: 0.26666667rem;
+  top: 0.47333333rem;
+  right: 0.14666667rem;
+  background: url("../images/右箭头 (2).png") no-repeat;
+  background-size: 100%;
+}
+.container .list ul li:last-child {
+  border: 0;
+}
+.container .list ul li:last-child div {
+  width: 0.42666667rem;
+}
+.container .list ul li:nth-of-type(1) div {
+  width: 0.44rem;
+}
+.container .list ul li:nth-of-type(2) div {
+  width: 0.41333333rem;
+}
+.container .list ul li:nth-of-type(3) div {
+  width: 0.37333333rem;
+}
+.container .list ul li:nth-of-type(4) div {
+  width: 0.4rem;
+}
+.container .bot {
+  width: 10rem;
+  height: 1.30666667rem;
+  display: flex;
+  background-color: #fff;
+  border-top: 0.01333333rem solid #e2e2e2;
+  position: fixed;
+  bottom: 0;
+}
+.container .bot > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .bot > div div {
+  margin-top: 0.28rem;
+  margin-bottom: 0.14666667rem;
+  width: 0.49333333rem;
+  height: 0.49333333rem;
+  background: url("../images/导航栏.png") no-repeat;
+  background-size: 8.34666667rem;
+}
+.container .bot > div span {
+  font-size: 0.29333333rem;
+  color: #c4c4c4;
+  text-align: center;
+  line-height: 0.29333333rem;
+}
+.container .bot > div:nth-child(1) div {
+  background: url("../images/首页.png") no-repeat;
+  background-size: 0.48rem;
+  background-position: 0 0;
+}
+.container .bot > div:nth-child(2) div {
+  background-position: -1.96rem 0;
+}
+.container .bot > div:nth-child(3) div {
+  background-position: -4rem 0;
+}
+.container .bot > div:nth-child(4) div {
+  background-position: -5.86666667rem 0;
+}
+.container .bot > div:nth-child(5) div {
+  background: url("../images/我的.png") no-repeat;
+  background-size: 0.44rem;
+  background-position: 0.02666667rem 0;
+}
+.container .bot > div:nth-child(5) span {
+  color: #5aa5f0;
+}
+/*# sourceMappingURL=me.css.map */

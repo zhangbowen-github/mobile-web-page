@@ -1,0 +1,60 @@
+/*css初始化*/
+body,ul,h1,h2,h3,h4,h5,h6,input,p,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px arial,"microsoft yahei";
+}
+li {
+	list-style: none;
+} 
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+input, textarea {
+	outline: none;
+	border: 0 none;
+}
+a {
+	text-decoration: none;
+}
+.w {
+	width: 1226px;
+	margin: 0 auto;
+}
+.f12 {
+	font-size: 12px;
+}
+.f14 {
+	font-size: 14px;
+}
+.f16 {
+	font-size: 16px;
+}
+.f18 {
+	font-size: 18px;
+}
+.f20 {
+	font-size: 20px;
+}
+.lf{ 
+	float: left;
+ }
+ .rf {
+ 	float: right;
+ }
+ .clearfix:before, .clearfix:after {
+ 	content: "";
+ 	display: table;
+ }
+ .clearfix:after {
+ 	clear: both;
+ }
+ .clearfix:after {
+	*zoom: 1;
+}

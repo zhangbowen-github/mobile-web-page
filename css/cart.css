@@ -1,0 +1,292 @@
+body {
+  width: 10rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+.container {
+  width: 10rem;
+  height: 17.78666667rem;
+  background-color: #f6f6f6;
+}
+.container header {
+  height: 1.81333333rem;
+  background-color: #5ca9f6;
+  overflow: hidden;
+}
+.container header div {
+  width: 100%;
+  height: 0.53333333rem;
+  margin-top: 0.86666667rem;
+  position: relative;
+}
+.container header div span {
+  font-size: 0.53333333rem;
+  line-height: 0.53333333rem;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1.41333333rem;
+}
+.container header div a {
+  float: right;
+  width: 0.4rem;
+  margin-top: 0.06rem;
+  margin-right: 0.45333333rem;
+}
+.container header div a img {
+  width: 100%;
+}
+.container header div b {
+  position: absolute;
+  width: 0.57333333rem;
+  height: 0.4rem;
+  left: 0.54666667rem;
+  top: 0.06666667rem;
+  background: url("../images/左箭头.png");
+  background-size: 100%;
+}
+.container .indent {
+  width: 8.8rem;
+  margin: 0 auto;
+  margin-top: 0.30666667rem;
+  margin-bottom: 0.28rem;
+  padding: 0 0.30666667rem 0 0.36rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+.container .indent .shop {
+  height: 1.13333333rem;
+  margin-top: 0.30666667rem;
+  margin-bottom: 0.32rem;
+}
+.container .indent .shop div:first-child {
+  float: left;
+  width: 1.13333333rem;
+  margin-right: 0.32rem;
+}
+.container .indent .shop div:first-child img {
+  display: block;
+  width: 100%;
+}
+.container .indent .shop div:last-child {
+  float: left;
+}
+.container .indent .shop div:last-child h5 {
+  height: 0.6rem;
+  font-size: 0.37333333rem;
+  color: #333;
+  margin: 0;
+}
+.container .indent .shop div:last-child span {
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.24rem;
+  color: #ff6f6f;
+  border: 0.01333333rem solid #ff6f6f;
+  border-radius: 0.22rem;
+}
+.container .indent .shop div:last-child span:nth-of-type(1) {
+  width: 1.02666667rem;
+  margin-right: 0.16rem;
+}
+.container .indent .shop div:last-child span:nth-of-type(2) {
+  width: 1.82666667rem;
+}
+.container .indent .cen {
+  height: 0.8rem;
+  position: relative;
+}
+.container .indent .cen span {
+  height: 0.8rem;
+  font-size: 0.34666667rem;
+  line-height: 0.34666667rem;
+  color: #5ca9f6;
+}
+.container .indent .cen :first-child {
+  float: left;
+}
+.container .indent .cen :nth-of-type(2) {
+  float: right;
+  margin-right: 0.6rem;
+}
+.container .indent .cen i {
+  position: absolute;
+  width: 0.17333333rem;
+  height: 0.29333333rem;
+  top: 0.02666667rem;
+  right: 0.26666667rem;
+  background: url("../images/箭头.png") no-repeat;
+  background-size: 0.17333333rem;
+}
+.container .indent .fruits ul {
+  padding-left: 0.6rem;
+  padding-right: 0.56rem;
+  box-sizing: border-box;
+}
+.container .indent .fruits ul li {
+  height: 1.42666667rem;
+  margin-bottom: 0.45333333rem;
+  position: relative;
+}
+.container .indent .fruits ul li div {
+  float: left;
+}
+.container .indent .fruits ul li div:nth-of-type(1) {
+  width: 1.42666667rem;
+  margin-right: 0.13333333rem;
+}
+.container .indent .fruits ul li div:nth-of-type(1) img {
+  width: 100%;
+}
+.container .indent .fruits ul li div:nth-of-type(2) h5 {
+  font-size: 0.29333333rem;
+  color: #333;
+  line-height: 0.29333333rem;
+  height: 0.33333333rem;
+  margin-top: 0.08rem;
+}
+.container .indent .fruits ul li div:nth-of-type(2) h6 {
+  font-size: 0.26666667rem;
+  color: #a3a3a3;
+  line-height: 0.26666667rem;
+  height: 0.6rem;
+}
+.container .indent .fruits ul li div:nth-of-type(2) span:nth-of-type(1) {
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  font-weight: bolder;
+  color: #ff6565;
+}
+.container .indent .fruits ul li div:nth-of-type(2) span:nth-of-type(2) {
+  font-size: 0.24rem;
+  color: #a3a3a3;
+  text-decoration: line-through;
+}
+.container .indent .fruits ul li div:nth-of-type(3) {
+  float: right;
+  width: 1.33333333rem;
+  height: 0.36rem;
+  margin-right: 0.86666667rem;
+  margin-top: 0.53333333rem;
+}
+.container .indent .fruits ul li div:nth-of-type(3) i {
+  float: left;
+  font-size: 0.32rem;
+  line-height: 0.36rem;
+  font-style: normal;
+  color: #333;
+}
+.container .indent .fruits ul li div:nth-of-type(3) span {
+  float: left;
+  width: 0.66666667rem;
+  height: 0.36rem;
+  font-size: 0.24rem;
+  border-radius: 0.33333333rem;
+  text-align: center;
+  line-height: 0.36rem;
+  margin: 0 0.17333333rem;
+  background-color: #ededed;
+}
+.container .indent .fruits ul li .circle {
+  position: absolute;
+  width: 0.29333333rem;
+  height: 0.29333333rem;
+  left: -0.6rem;
+  top: 0.56666667rem;
+  border: 0.01333333rem solid #696969;
+  border-radius: 50%;
+}
+.container .indent .fruits ul li .circle_bo {
+  position: absolute;
+  width: 0.32rem;
+  height: 0.33333333rem;
+  right: 0;
+  top: 0.54666667rem;
+  background: url("../images/删除.png") no-repeat;
+  background-size: 0.32rem;
+}
+.container .indent .fruits ul li:last-child {
+  margin-bottom: 0.12rem;
+}
+.container .close {
+  width: 10rem;
+  height: 1.33333333rem;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.container .close .left {
+  display: flex;
+  width: 1.26666667rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  margin-left: 0.64rem;
+  align-items: center;
+}
+.container .close .left b {
+  width: 0.29333333rem;
+  height: 0.29333333rem;
+  border: 0.01333333rem solid #ff6565;
+  border-radius: 0.14666667rem;
+  vertical-align: middle;
+}
+.container .close .left span {
+  font-size: 0.34666667rem;
+  color: #333;
+}
+.container .close .right {
+  height: 1.33333333rem;
+}
+.container .close .right div:first-child {
+  float: left;
+  height: 1.33333333rem;
+  text-align: right;
+  margin-right: 0.28rem;
+}
+.container .close .right div:first-child h5 {
+  height: 0.37333333rem;
+  font-size: 0.24rem;
+  color: #333;
+  margin: 0;
+  margin-top: 0.21333333rem;
+  margin-bottom: 0.10666667rem;
+}
+.container .close .right div:first-child h5 s {
+  font-size: 0.24rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff6565;
+}
+.container .close .right div:first-child h5 span {
+  font-size: 0.37333333rem;
+  font-weight: bolder;
+  color: #ff6565;
+}
+.container .close .right div:first-child i {
+  font-size: 0.26666667rem;
+  font-style: normal;
+  color: #999;
+}
+.container .close .right div:last-child {
+  float: left;
+  width: 2.16rem;
+  height: 1.33333333rem;
+  text-align: center;
+  line-height: 1.33333333rem;
+  font-size: 0.37333333rem;
+  color: #fff;
+  background-color: #5ca9f6;
+}
+/*# sourceMappingURL=cart.css.map */

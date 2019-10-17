@@ -1,0 +1,581 @@
+body {
+  width: 10rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+.container {
+  width: 100%;
+  background: #f3f3f3 url("../images/banner_01.png") no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+.container header {
+  margin-top: 2.4rem;
+}
+.container header .top {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 10rem;
+  height: 0.70666667rem;
+  padding: 0 0.46666667rem 0 0.38666667rem;
+  position: fixed;
+  top: 0.78666667rem;
+}
+.container header .top a:first-child {
+  width: 0.33333333rem;
+  height: 0.46666667rem;
+  margin-right: 0.14666667rem;
+  background: url("../images/图标.png") no-repeat;
+  background-position: 0 -0.10666667rem;
+  background-size: 2.73333333rem;
+}
+.container header .top :first-child + a {
+  font-size: 0.32rem;
+  color: #fff;
+}
+.container header .top > span {
+  width: 0.22666667rem;
+  height: 0.14666667rem;
+  margin-left: 0.16rem;
+  margin-top: 0.06666667rem;
+  background: url("../images/图标.png") no-repeat;
+  background-position: 0 -0.10666667rem;
+  background-size: 2.73333333rem;
+}
+.container header .top .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.70666667rem;
+  margin-left: 0.26666667rem;
+  border-radius: 0.35333333rem;
+  background-color: #fff;
+}
+.container header .top .search :first-child {
+  width: 0.29333333rem;
+  margin-right: 0.2rem;
+}
+.container header .top .search :first-child img {
+  width: 100%;
+}
+.container header .top .search :last-child {
+  font-size: 0.26666667rem;
+  color: #000;
+}
+.container header .top > :last-child {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-left: 0.28rem;
+}
+.container header .top > :last-child img {
+  width: 100%;
+}
+.container .banner {
+  width: 3.6rem;
+  margin: 0.88rem 0 0.17333333rem 1.05333333rem;
+}
+.container .banner :first-child {
+  width: 100%;
+  height: 0.66666667rem;
+  font-size: 0.66666667rem;
+  line-height: 0.66666667rem;
+  color: #fff;
+  padding-left: 0.05333333rem;
+}
+.container .banner :last-child {
+  width: 100%;
+  height: 0.86666667rem;
+  font-size: 0.36rem;
+  color: #fff;
+  line-height: 0.86666667rem;
+  margin-top: 0.18666667rem;
+  padding-left: 0.24rem;
+  border-radius: 0.16rem;
+  background: -webkit-linear-gradient(left, #3b6d9e, transparent);
+}
+.container .pay {
+  width: 9.49333333rem;
+  height: 2.65333333rem;
+  margin: 0 auto;
+  margin-bottom: 0.26666667rem;
+  display: flex;
+  border-radius: 0.16rem;
+  background-color: #fff;
+}
+.container .pay a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.72rem;
+}
+.container .pay a div {
+  background: url("../images/10图标.png") no-repeat;
+  background-size: 8.30666667rem;
+  margin-bottom: 0.34666667rem;
+}
+.container .pay a span {
+  font-size: 0.32rem;
+  color: #333;
+  text-align: center;
+}
+.container .pay a:nth-child(1) div {
+  width: 0.89333333rem;
+  height: 0.62666667rem;
+  background-position: -1rem -2.62666667rem;
+}
+.container .pay a:nth-child(2) div {
+  width: 0.76rem;
+  height: 0.64rem;
+  background-position: -2.86666667rem -2.61333333rem;
+}
+.container .pay a:nth-child(3) div {
+  width: 0.72rem;
+  height: 0.65333333rem;
+  background-position: -4.69333333rem -2.61333333rem;
+}
+.container .pay a:nth-child(4) div {
+  width: 0.72rem;
+  height: 0.65333333rem;
+  background-position: -6.49333333rem -2.6rem;
+}
+.container .fruits {
+  width: 9.49333333rem;
+  height: 5.98666667rem;
+  margin: 0 auto;
+  margin-bottom: 0.18666667rem;
+  border-radius: 0.16rem;
+  background-color: #fff;
+}
+.container .fruits .f_top {
+  padding: 0.33333333rem 0.32rem 0 0.32rem;
+}
+.container .fruits .f_top .f_top_f {
+  display: flex;
+  width: 100%;
+  height: 1.57333333rem;
+}
+.container .fruits .f_top .f_top_f a:nth-child(1) div {
+  background-position: -0.93333333rem -4.25333333rem;
+}
+.container .fruits .f_top .f_top_f a:nth-child(2) div {
+  background-position: -2.72rem -4.25333333rem;
+}
+.container .fruits .f_top .f_top_f a:nth-child(3) div {
+  background-position: -4.54666667rem -4.25333333rem;
+}
+.container .fruits .f_top .f_top_f a:nth-child(4) div {
+  background-position: -6.34666667rem -4.25333333rem;
+}
+.container .fruits .f_top .f_top_f a:nth-child(5) div {
+  background-position: -0.93333333rem -6.06666667rem;
+}
+.container .fruits .f_top .f_top_l {
+  display: flex;
+  width: 100%;
+  height: 2.13333333rem;
+  margin-top: 0.48rem;
+}
+.container .fruits .f_top .f_top_l a:nth-child(1) div {
+  background-position: -2.72rem -6.06666667rem;
+}
+.container .fruits .f_top .f_top_l a:nth-child(2) div {
+  background-position: -4.54666667rem -6.06666667rem;
+}
+.container .fruits .f_top .f_top_l a:nth-child(3) div {
+  background-position: -6.34666667rem -6.06666667rem;
+}
+.container .fruits .f_top .f_top_l a:nth-child(4) div {
+  background-position: -0.93333333rem -7.89333333rem;
+}
+.container .fruits .f_top .f_top_l a:nth-child(5) div {
+  background-position: -2.73333333rem -7.89333333rem;
+}
+.container .fruits .f_top a {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .fruits .f_top a div {
+  width: 1.01333333rem;
+  height: 1.01333333rem;
+  margin-bottom: 0.18666667rem;
+  background: url("../images/10图标.png") no-repeat;
+  background-size: 8.30666667rem;
+}
+.container .fruits .f_top a span {
+  font-size: 0.29333333rem;
+  color: #333333;
+  text-align: center;
+}
+.container .fruits .f_bottom {
+  margin: 0 0.45333333rem;
+  padding-top: 0.32rem;
+  border-top: 0.01333333rem solid #e2e2e2;
+  box-sizing: border-box;
+  position: relative;
+}
+.container .fruits .f_bottom > a {
+  width: 0.74666667rem;
+  height: 0.78666667rem;
+  position: absolute;
+  left: 0.2rem;
+}
+.container .fruits .f_bottom > a img {
+  width: 100%;
+}
+.container .fruits .f_bottom > div {
+  width: 6.16rem;
+  height: 0.88rem;
+  font-size: 0.29333333rem;
+  color: #a3a3a3;
+  display: inline-block;
+  margin-left: 1.49333333rem;
+  padding-left: 0.2rem;
+  border-left: 0.01333333rem solid #e2e2e2;
+}
+.container .fruits .f_bottom > div div {
+  width: 100%;
+  height: 0.34666667rem;
+  position: relative;
+}
+.container .fruits .f_bottom > div div div {
+  line-height: 0.34666667rem;
+}
+.container .fruits .f_bottom > div div div span {
+  float: left;
+  width: 0.6rem;
+  height: 0.32rem;
+  font-size: 0.24rem;
+  border: 0.01333333rem solid #5ca9f6;
+  text-align: center;
+  color: #5ca9f6;
+}
+.container .fruits .f_bottom > div div div :last-child {
+  color: #a3a3a3;
+  border: 0;
+  margin-left: 0.45333333rem;
+}
+.container .fruits .f_bottom > div div div p {
+  float: left;
+  width: 4.30666667rem;
+  height: 0.34666667rem;
+  line-height: 0.34666667rem;
+  margin-left: 0.12rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .fruits .f_bottom > div div div:first-child {
+  margin-bottom: 0.18666667rem;
+}
+.container .fruits .f_bottom > div > a {
+  position: absolute;
+  width: 0.18666667rem;
+  height: 0.32rem;
+  right: 0.21333333rem;
+  top: 0.53333333rem;
+}
+.container .fruits .f_bottom > div > a img {
+  width: 100%;
+}
+.container .rob {
+  width: 9.50666667rem;
+  height: 5.54666667rem;
+  border-radius: 0.16rem;
+  margin: 0 auto;
+  padding-top: 0.44rem;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(top, #5ca4eb, #f0f3f6);
+}
+.container .rob .rob_top {
+  height: 0.82666667rem;
+  margin-left: 0.42666667rem;
+  position: relative;
+}
+.container .rob .rob_top div:first-child img {
+  width: 0.50666667rem;
+  height: 0.50666667rem;
+  float: left;
+}
+.container .rob .rob_top div:first-child strong {
+  float: left;
+  font-size: 0.48rem;
+  line-height: 0.48rem;
+  margin: 0.02666667rem 0.14666667rem 0 0.24rem;
+  color: #fff;
+}
+.container .rob .rob_top div:first-child span {
+  float: left;
+  display: inline-block;
+  width: 0.42666667rem;
+  height: 0.42666667rem;
+  background-color: #fff;
+  font-size: 0.21333333rem;
+  color: #72afec;
+  text-align: center;
+  line-height: 0.42666667rem;
+  margin: 0.06666667rem 0.09333333rem 0 0.09333333rem;
+}
+.container .rob .rob_top div:first-child i {
+  float: left;
+  width: 0.08rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.32rem;
+  font-style: normal;
+  margin-top: 0.06666667rem;
+  color: #fff;
+}
+.container .rob .rob_top div:last-child {
+  width: 1.90666667rem;
+  height: 1.01333333rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+}
+.container .rob .rob_top div:last-child img {
+  width: 100%;
+}
+.container .rob .rob_bottom {
+  height: 3.89333333rem;
+  margin: 0 0.45333333rem;
+  padding: 0.32rem 0.30666667rem 0 0.26666667rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 0.16rem;
+}
+.container .rob .rob_bottom a {
+  float: left;
+  width: 2.52rem;
+  height: 2.30666667rem;
+}
+.container .rob .rob_bottom a img {
+  width: 100%;
+}
+.container .rob .rob_bottom a h5 {
+  height: 0.42666667rem;
+  font-size: 0.29333333rem;
+  line-height: 0.29333333rem;
+  margin-top: 0.18666667rem;
+  color: #000;
+}
+.container .rob .rob_bottom a b {
+  display: inline-block;
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  color: #ff6565;
+}
+.container .rob .rob_bottom a span {
+  font-size: 0.24rem;
+  text-decoration: line-through;
+  color: #a3a3a3;
+}
+.container .rob .rob_bottom a:nth-child(2) {
+  margin: 0 0.22666667rem;
+}
+.container .meat {
+  width: 9.49333333rem;
+  height: 5.38666667rem;
+  margin: 0 auto;
+  margin-top: 0.25333333rem;
+}
+.container .meat div {
+  float: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.container .meat h5 {
+  font-size: 0.4rem;
+  color: #fff;
+  margin: 0;
+  margin-top: 0.45333333rem;
+  margin-bottom: 0.18666667rem;
+}
+.container .meat h6 {
+  width: 2.24rem;
+  height: 0.52rem;
+  margin: 0;
+  font-size: 0.29333333rem;
+  text-align: center;
+  line-height: 0.52rem;
+  color: #fff;
+  border-radius: 0.06666667rem;
+}
+.container .meat .meat_l {
+  width: 5.56rem;
+  height: 5.38666667rem;
+  margin-right: 0.14666667rem;
+}
+.container .meat .meat_l .meat_l-t {
+  width: 5.56rem;
+  height: 2.56rem;
+  margin-bottom: 0.14666667rem;
+  padding-left: 0.29333333rem;
+  background: url("../images/1.png") no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+.container .meat .meat_l .meat_l-t h6 {
+  background-color: #5ca9f6;
+}
+.container .meat .meat_l .meat_l-t + div {
+  width: 5.56rem;
+  height: 2.69333333rem;
+}
+.container .meat .meat_l .meat_l-t + div div {
+  float: left;
+  width: 2.72rem;
+  height: 2.69333333rem;
+}
+.container .meat .meat_l .meat_l-t + div .meat_l-tt {
+  margin-right: 0.12rem;
+  padding-left: 0.29333333rem;
+  background: url("../images/3.png") no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+.container .meat .meat_l .meat_l-t + div .meat_l-tt h6 {
+  width: 1.97333333rem;
+  margin-top: 1.04rem;
+  background-color: #8b59f1;
+}
+.container .meat .meat_l .meat_l-t + div .meat_l-tt + div {
+  padding-left: 0.29333333rem;
+  background: url("../images/4.png") no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+.container .meat .meat_l .meat_l-t + div .meat_l-tt + div h6 {
+  background-color: #e56a44;
+}
+.container .meat .meat_r {
+  width: 3.78666667rem;
+  height: 100%;
+  padding-left: 0.29333333rem;
+  background: url("../images/2.png") no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+.container .meat .meat_r h6 {
+  background-color: #ff6565;
+}
+.container .meat .meat_r span {
+  display: block;
+  width: 2.37333333rem;
+  height: 0.61333333rem;
+  margin: 0 auto;
+  margin-top: 2.69333333rem;
+  border-radius: 0.30666667rem;
+  font-size: 0.29333333rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.61333333rem;
+  background-color: #686868;
+}
+.container .actor {
+  width: 9.46666667rem;
+  margin: 0 auto;
+  margin-bottom: 0.66666667rem;
+}
+.container .actor h3 {
+  padding-left: 0.42666667rem;
+  height: 0.69333333rem;
+  font-size: 0.4rem;
+  color: #000;
+  margin: 0;
+  margin-top: 0.64rem;
+}
+.container .actor .actor_d {
+  width: 9.46666667rem;
+  height: 2.56rem;
+  border-radius: 0.16rem;
+  background: url("../images/优选.png") no-repeat;
+  background-size: 100%;
+}
+.container .actor .actor_d div {
+  float: right;
+  width: 4.73333333rem;
+  height: 1.92rem;
+  margin-top: 0.53333333rem;
+  background-color: #d9e7ff;
+}
+.container .actor .actor_d div h5 {
+  height: 0.82666667rem;
+  font-size: 0.34666667rem;
+  line-height: 0.34666667rem;
+  color: #333;
+  margin: 0;
+  padding: 0.30666667rem 0 0 0.21333333rem;
+  box-sizing: border-box;
+  border-bottom: 0.02666667rem solid #a1c4ff;
+}
+.container .actor .actor_d div h6 {
+  height: 1.06666667rem;
+  font-size: 0.26666667rem;
+  color: #a3a3a3;
+  padding-left: 0.21333333rem;
+  margin: 0;
+  margin-top: 0.12rem;
+  box-sizing: border-box;
+}
+.container .bot {
+  width: 10rem;
+  height: 1.30666667rem;
+  display: flex;
+  background-color: #fff;
+  border-top: 0.01333333rem solid #e2e2e2;
+  position: fixed;
+  bottom: 0;
+}
+.container .bot > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .bot > div div {
+  margin-top: 0.28rem;
+  margin-bottom: 0.14666667rem;
+  width: 0.49333333rem;
+  height: 0.49333333rem;
+  background: url("../images/导航栏.png") no-repeat;
+  background-size: 8.34666667rem;
+}
+.container .bot > div span {
+  font-size: 0.29333333rem;
+  color: #c4c4c4;
+  text-align: center;
+  line-height: 0.29333333rem;
+}
+.container .bot > div:nth-child(1) div {
+  background-position: 0 0;
+}
+.container .bot > div:nth-child(1) span {
+  color: #5aa5f0;
+}
+.container .bot > div:nth-child(2) div {
+  background-position: -1.96rem 0;
+}
+.container .bot > div:nth-child(3) div {
+  background-position: -4rem 0;
+}
+.container .bot > div:nth-child(4) div {
+  background-position: -5.86666667rem 0;
+}
+.container .bot > div:nth-child(5) div {
+  background-position: -7.85333333rem 0;
+}
+/*# sourceMappingURL=index.css.map */
