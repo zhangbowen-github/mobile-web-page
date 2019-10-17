@@ -1,0 +1,60 @@
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+body {
+  margin: 0 auto;
+  width: 10rem;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+}
+footer {
+  width: 10rem;
+  height: 1.30666667rem;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+footer a {
+  color: #bcbcbc;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer a div {
+  width: 0.48rem;
+  height: 0.48rem;
+  background-size: 8.30666667rem !important;
+}
+footer a:nth-child(4) {
+  color: #59a6ef;
+}
+footer a:nth-child(1) div {
+  background: url(../images/订单/首页.png) no-repeat;
+  background-size: 0.48rem !important;
+}
+footer a:nth-child(2) div {
+  background: url(../images/首页/foot.gif) no-repeat -1.96rem 0;
+}
+footer a:nth-child(3) div {
+  background: url(../images/首页/foot.gif) no-repeat -3.98666667rem 0;
+}
+footer a:nth-child(4) div {
+  background: url(../images/订单/foot.gif) no-repeat -5.85333333rem 0;
+}
+footer a:nth-child(5) div {
+  background: url(../images/首页/foot.gif) no-repeat -7.84rem 0;
+}
