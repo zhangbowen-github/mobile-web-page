@@ -1,10 +1,10 @@
 @base:75;
-@media screen and (max-width: 450px) {
-    .info .top .txt span, .info .top .txt i{
-        padding: 0 !important;
-    }
+// @media screen and (max-width: 450px) {
+//     .info .top .txt span, .info .top .txt i{
+//         padding: 0 !important;
+//     }
     
-}
+// }
 
 img {
     vertical-align: middle;
@@ -62,7 +62,7 @@ body{
         margin-top: 71rem/@base;
         width: 30rem/@base;
         height: 31rem/@base;
-        background: url(./../images/订单/组_2.gif);
+        background: url(./../images/订单/铃铛.png);
         background-size: 100%;
     }
     .ling:hover {
@@ -177,6 +177,7 @@ nav {
 
     // 上面的盒子-----------------
     .top {
+        position: relative;
         border-bottom: 1rem/@base solid #e2e2e2;
         display: flex;
 
@@ -193,13 +194,18 @@ nav {
         }
         //上海等文字
         .txt {
-            width: 320rem/@base;
-            margin-right: auto;
+            // width: 320rem/@base;
+            // margin-right: auto;
 
             p {
                 font-size: 26rem/@base;
                 margin-bottom: 20rem/@base;
             }
+            // div{
+            //     // display: flex;
+            //     // width: 228rem/@base;
+            //     // justify-content: space-between;
+            // }
 
             span,
             i {
@@ -209,16 +215,17 @@ nav {
                 border-radius: 16rem/@base;
                 border: 1px solid #ff6565;
                 color: #ff6565;
-                text-align: center;
                 font-size: 18rem/@base;
-                padding: 0 12px;
+                padding: 0 12rem/@base;
             }
 
             
         }
 
         .wang {
-            margin-top: 28rem/@base;
+            position: absolute;
+            top: 28rem/@base;
+            right: 0;
             // margin-left: 524rem/@base;
             font-size: 22rem/@base;
            
@@ -279,10 +286,11 @@ nav {
             }
             .pingjia{
                 margin-left: 25rem/@base;
-                width: 128rem/@base;
-                height: 48rem/@base;
+                // width: 88rem/@base;
                 line-height: 48rem/@base;
                 border-radius: 23rem/@base;
+                padding-left: 20rem /@base;
+                padding-right: 20rem /@base;
                 text-align: center;
                 font-size: 20rem/@base;
                 color: #fff;

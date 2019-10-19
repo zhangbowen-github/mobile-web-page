@@ -16,32 +16,32 @@
 
 <body>
     <div class="container">
-       
+
         <!-- 顶部固定部分 -->
         <div class="fixed">
             <!-- 顶部 -->
-        <div class="dingdan">
-            <div class="tex">
-                订单
-            </div>
-            <div class="ling">
+            <div class="dingdan">
+                <div class="tex">
+                    订单
+                </div>
+                <div class="ling">
 
+                </div>
             </div>
-        </div>
-        <!-- 导航 -->
-        <nav>
-            <div class="all select">
-                全部订单
-                <span></span>
-            </div>
-            <div class="daiping ">
-                待评价
-                <span></span>
-            </div>
-            <div class="tui  ">
-                退款
-                <span></span>
-            </div>
+            <!-- 导航 -->
+            <nav>
+                <div class="all select">
+                    全部订单
+                    <span></span>
+                </div>
+                <div class="daiping ">
+                    待评价
+                    <span></span>
+                </div>
+                <div class="tui  ">
+                    退款
+                    <span></span>
+                </div>
 
         </div>
 
@@ -57,8 +57,10 @@
                     </div>
                     <div class="txt">
                         <p>上海城北店</p>
+
                         <span>领券20</span>
                         <i>全场满90减20</i>
+
                     </div>
                     <div class="wang">
                         订单已完成&nbsp;<span>></span>
@@ -216,7 +218,6 @@
 
     <script src="./js/jQuery.min.js"></script>
     <script>
-
         //点击切换页面
         $('nav .all').click(function () {
             $(this).siblings().removeClass('select').children('span').hide();
@@ -389,19 +390,18 @@
 
         //点击退款到退款界面
 
-       $(function () {
-        $('.conte').on('click', '.tuikuan' ,function () {
-            console.log(111);
-            
-            $('nav .tui').trigger('click');
+        $(function () {
+            $('.conte').on('click', '.tuikuan', function () {
+                console.log(111);
+
+                $('nav .tui').trigger('click');
+            })
         })
-       })
 
         //点击立即评价到立即评价界面
-        $('.conte').on('click', '.pingjia' ,function () {
+        $('.conte').on('click', '.pingjia', function () {
             $('nav .daiping').trigger('click')
         })
-
     </script>
 </body>
 
