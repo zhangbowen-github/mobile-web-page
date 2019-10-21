@@ -1,0 +1,179 @@
+body {
+  font-size: 0.26666667rem;
+  font-family: '微软雅黑';
+}
+img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+i,
+em {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+input {
+  border: none;
+  outline: none;
+}
+.container {
+  width: 100%;
+  position: relative;
+  height: 17.77333333rem;
+  background: url(../images/登录页/1bg.png) no-repeat #5ca9f6;
+}
+.container .meng {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.container .meng .kuang {
+  font-size: 0.4rem;
+  text-align: center;
+  margin: 50% auto ;
+  transform: translateY(50%);
+  width: 8.26666667rem;
+  height: 3.46666667rem;
+  line-height: 1.73333333rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #333;
+  display: flex;
+  flex-direction: column;
+}
+.container .meng .kuang .t {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.container .meng .kuang .b {
+  flex: 1;
+  display: flex;
+}
+.container .meng .kuang .b a {
+  color: #000;
+}
+.container .meng .kuang .b .left {
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+.container .meng .kuang .b .right {
+  flex: 1;
+}
+.container .bo1 {
+  width: 8.26666667rem;
+  height: 10.09333333rem;
+  position: absolute;
+  top: 5.96rem;
+  left: 1.08rem;
+  background-color: #beddfb;
+  border-radius: 0.2rem;
+}
+.container .box {
+  position: absolute;
+  width: 8.26666667rem;
+  height: 10.22666667rem;
+  top: 5.56rem;
+  left: 0.8rem;
+  background-color: #ffffff;
+  z-index: 1;
+  border-radius: 0.2rem;
+}
+.box {
+  font-size: 0.37333333rem;
+}
+.box .logo {
+  width: 2.49333333rem;
+  margin: 0.72rem auto 1.10666667rem;
+}
+.box .logo img {
+  width: 100%;
+}
+.box .tel {
+  margin: 0 auto 0.90666667rem;
+  width: 7.14666667rem;
+  height: 1.06666667rem;
+  padding: 0 0.50666667rem;
+  border-radius: 0.53333333rem;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  color: #a3a3a3;
+  box-sizing: border-box;
+}
+.box .tel .icon {
+  width: 0.44rem;
+  height: 0.53333333rem;
+  background: url(../images/登录页/1.gif) no-repeat;
+  background-size: 100%;
+}
+.box .tel input {
+  margin-left: 0.38666667rem;
+  color: #a3a3a3;
+}
+.box .pwd {
+  margin: 0 auto 0;
+  width: 7.14666667rem;
+  height: 1.06666667rem;
+  padding: 0 0.58666667rem 0 0.58666667rem;
+  border-radius: 0.53333333rem;
+  border: 1px  solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a3a3a3;
+  box-sizing: border-box;
+}
+.box .pwd .icon {
+  width: 0.4rem;
+  height: 0.46666667rem;
+  background: url(../images/登录页/2.gif) no-repeat;
+  background-size: 100%;
+}
+.box .pwd input {
+  margin-left: 0.38666667rem;
+  width: 100%;
+  color: #a3a3a3;
+}
+.box .pwd .icon2 {
+  width: 0.6rem;
+  height: 0.26666667rem;
+  background: url(../images/登录页/眼睛.png) no-repeat;
+  background-size: 100% 100%;
+}
+.box .pwd .icon2:hover {
+  cursor: pointer ;
+}
+.box .wang {
+  font-size: 0.26666667rem;
+  margin: 0.66666667rem 0 0.66666667rem 6.30666667rem;
+}
+.box .wang a {
+  color: #5ca9f6;
+}
+.queding {
+  margin: 0 auto 1.30666667rem;
+  width: 7.14666667rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  text-align: center;
+  padding: 0 0.50666667rem;
+  border-radius: 0.53333333rem;
+  box-sizing: border-box;
+  background-color: #5ca9f6;
+}
+.queding a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
