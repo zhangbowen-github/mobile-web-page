@@ -1,6 +1,7 @@
 body {
   width: 10rem;
   margin: 0 auto;
+  background-color: #f6f6f6;
 }
 @media screen and (max-width: 320px) {
   html {
@@ -14,8 +15,7 @@ body {
 }
 .container {
   width: 10rem;
-  height: 18.66666667rem;
-  background-color: #f6f6f6;
+  margin-bottom: 1.6rem;
 }
 .container header {
   width: 10rem;
@@ -39,9 +39,9 @@ body {
   height: 0.41333333rem;
   margin-right: 0.48rem;
   margin-top: 0.06666667rem;
-  background: url("../images/消息.png") no-repeat;
-  background-size: 100%;
-  background-position: 0 0;
+  background: url("../images/图标.png") no-repeat;
+  background-size: 2.73333333rem;
+  background-position: -0.84rem -0.08rem;
 }
 .container header .bottom {
   height: 1.64rem;
@@ -200,7 +200,7 @@ body {
 .container .bot > div:nth-child(1) div {
   background: url("../images/首页.png") no-repeat;
   background-size: 0.48rem;
-  background-position: 0 0;
+  background-position: 0.02rem 0.01333333rem;
 }
 .container .bot > div:nth-child(2) div {
   background-position: -1.96rem 0;
@@ -213,8 +213,8 @@ body {
 }
 .container .bot > div:nth-child(5) div {
   background: url("../images/我的.png") no-repeat;
-  background-size: 0.44rem;
-  background-position: 0.02666667rem 0;
+  background-size: 0.43733333rem;
+  background-position: 0.02rem 0;
 }
 .container .bot > div:nth-child(5) span {
   color: #5aa5f0;

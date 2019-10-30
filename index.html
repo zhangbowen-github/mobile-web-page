@@ -7,9 +7,9 @@
     <title>萝卜生鲜网</title>
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="./js/nprogress.css">
     <link href="./css/index.css" rel="stylesheet">
-    <script src="./js/flexible.js"></script>
-    <script src="./js/index.js"></script>
+
 </head>
 <body>
 <!--版心-->
@@ -69,7 +69,6 @@
     <!--新鲜水果部分开始；fruits ==>水果-->
     <div class="fruits">
         <div class='f_top'>
-            <div class='f_top_f'>
                 <a href="#">
                     <div></div>
                     <span>新鲜水果</span>
@@ -90,8 +89,6 @@
                     <div></div>
                     <span>奶品烘焙</span>
                 </a>
-            </div>
-            <div class='f_top_l'>
                 <a href="#">
                     <div></div>
                     <span>餐饮熟食</span>
@@ -112,7 +109,6 @@
                     <div></div>
                     <span>家居洗护</span>
                 </a>
-            </div>
         </div>
         <div class='f_bottom'>
             <a href="#">
@@ -123,12 +119,12 @@
                     <div>
                         <span>通知</span>
                         <p>肉类商品全场8.8折,肉类商品卷12345</p>
-                        <span>04.28</span>
+                        <span class='data'></span>
                     </div>
                     <div>
                         <span>通知</span>
                         <p>肉类商品全场8.8折,肉类商品卷12345</p>
-                        <span>04.28</span>
+                        <span class='data'></span>
                     </div>
                 </div>
                 <a href="#">
@@ -145,33 +141,33 @@
             <div>
                 <b></b>
                 <strong>现实抢购</strong>
-                <span>16</span>
+                <span id="time">16</span>
                 <i>:</i>
-                <span>16</span>
+                <span id="fen">16</span>
                 <i>:</i>
-                <span>16</span>
+                <span id="miao">16</span>
             </div>
             <div>
                 <img alt="" src="./images/鱼.png">
             </div>
         </div>
         <div class='rob_bottom'>
-            <a href="#">
+            <a href="./7商品详情百香果.html">
                 <img alt="" src="./images/nav1.png">
                 <h5>海鲜肉百香果</h5>
-                <b>￥78</b>
+                <b>￥58</b>
                 <span>￥122</span>
             </a>
-            <a href="#">
+            <a href="./7商品详情鸡翅.html">
                 <img alt="" src="./images/nav2.png">
                 <h5>冷冻鸡翅膀</h5>
                 <b>￥78</b>
                 <span>￥122</span>
             </a>
-            <a href="#">
+            <a href="./7商品详情大虾.html">
                 <img alt="" src="./images/nav3.png">
                 <h5>山东大虾</h5>
-                <b>￥78</b>
+                <b>￥48</b>
                 <span>￥122</span>
             </a>
         </div>
@@ -241,4 +237,8 @@
     </div>
 </div>
 </body>
+<script src="./js/flexible.js"></script>
+<script src="./js/jQuery.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/nprogress.js"></script>
 </html>

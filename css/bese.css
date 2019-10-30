@@ -1,0 +1,174 @@
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+body {
+  margin: 0 auto;
+  width: 10rem;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+}
+/*
+footer {
+    width: 750rem/@base;
+    height: 98rem/@base;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+
+    a {
+        color: #bcbcbc;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 36rem/@base;
+            height: 36rem/@base;
+            background-size: 623rem/@base  !important;
+
+        }
+
+    }
+
+    a:nth-child(4) {
+        color: #59a6ef;
+    }
+
+    a:nth-child(1) div {
+        background: url(./../images/订单/首页.png) no-repeat ;
+        background-size: 36rem/@base  !important;
+    }
+
+    a:nth-child(2) div {
+        background: url(./../images/首页/foot.gif) no-repeat -147rem/@base 0;
+
+
+        
+    }
+  
+    a:nth-child(3) div {
+        background: url(./../images/首页/foot.gif) no-repeat -299rem/@base 0;
+    }
+
+    a:nth-child(4) div {
+        background: url(./../images/订单/foot.gif) no-repeat -439rem/@base 0;
+    }
+
+    a:nth-child(5) div {
+        background: url(./../images/首页/foot.gif) no-repeat -588rem/@base 0;
+    }
+
+    //悬停
+    // a:nth-child(1):hover {
+    //     color: #59a6ef;
+    // }
+    // a:nth-child(1):hover div {
+    //     background: url(./../images/首页/foot.gif) no-repeat 0 0;
+
+    // }
+
+
+    // a:nth-child(2):hover {
+    //     color: #59a6ef;
+    // }
+
+    // a:nth-child(2):hover div {
+    //     background: url(./../images/分类/foot.gif) no-repeat -147rem/@base 0;
+
+    // }
+
+    // a:nth-child(3):hover {
+    //     color: #59a6ef;
+    // }
+
+    // a:nth-child(3):hover div {
+    //     background: url(./../images/食谱/foot.gif) no-repeat -299rem/@base 0;
+    // }
+
+    // a:nth-child(4):hover {
+    //     color: #59a6ef;
+    // }
+
+    // a:nth-child(4):hover div {
+    //     background: url(./../images/订单/foot.gif) no-repeat -439rem/@base 0;
+    // }
+
+    // a:nth-child(5):hover {
+    //     color: #59a6ef;
+    // }
+
+    // a:nth-child(5):hover div {
+    //     background: url(./../images/我的/foot.gif) no-repeat -588rem/@base 0;
+    // }
+
+
+}*/
+.bot {
+  width: 10rem;
+  height: 1.30666667rem;
+  display: flex;
+  background-color: #fff;
+  border-top: 0.01333333rem solid #e2e2e2;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+.bot > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bot > div div {
+  margin-top: 0.28rem;
+  margin-bottom: 0.14rem;
+  width: 0.49333333rem;
+  height: 0.49333333rem;
+  background: url("../images/导航栏.png") no-repeat;
+  background-size: 8.34666667rem;
+}
+.bot > div span {
+  font-size: 0.29333333rem;
+  color: #c4c4c4;
+  text-align: center;
+  line-height: 0.29333333rem;
+}
+.bot > div:nth-child(1) div {
+  background: url("../images/首页.png") no-repeat;
+  background-size: 0.48rem;
+  background-position: 0.02rem 0.01333333rem;
+}
+.bot > div:nth-child(2) div {
+  background-position: -1.96rem 0;
+}
+.bot > div:nth-child(3) div {
+  background-position: -4rem 0;
+}
+.bot > div:nth-child(4) div {
+  background: url("../images/10图标.png") no-repeat;
+  background-position: -3.14666667rem -10.45333333rem;
+  background-size: 8.68rem 14.15133333rem;
+}
+.bot > div:nth-child(4) span {
+  color: #5aa5f0;
+}
+.bot > div:nth-child(5) div {
+  background-position: -7.86666667rem 0;
+}
+/*# sourceMappingURL=bese.css.map */

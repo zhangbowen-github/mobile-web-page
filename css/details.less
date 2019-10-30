@@ -1,0 +1,251 @@
+@base :75;
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 32px !important;
+    }
+}
+
+
+
+body {
+    width: 750rem/@base;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+h3 {
+    margin: 0;
+}
+
+/* .kb {
+    height: 42rem/@base;
+} */
+
+.jc {
+    height: 642rem/@base;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 轮播图----------------------- */
+
+.swiper-container {
+    width: 100%;
+
+}
+
+.jc img {
+    width: 100%;
+}
+
+/* 轮播图----------------------- */
+
+.jc .left {
+    position: absolute;
+    left: 36rem/@base;
+    top: 18rem/@base;
+    z-index: 99;
+
+    img {
+        width: 68rem/@base;
+    }
+}
+
+.jc .shop {
+    position: absolute;
+    right: 30rem/@base;
+    top: 18rem/@base;
+    z-index: 99;
+
+    img {
+        width: 68rem/@base;
+    }
+}
+
+.jc .shop span {
+    position: absolute;
+    top: 0;
+    right: -10rem/@base;
+    z-index: 100;
+    /* width: 30rem/@base; */
+    padding: 0 10rem/@base;
+    height: 20rem/@base;
+    border-radius: 20rem/@base;
+    background-color: #ff0000;
+    text-align: center;
+    line-height: 20rem/@base;
+    font-size: 12rem/@base;
+    color: #fff;
+}
+
+.jc .wz {
+    position: absolute;
+    width: 88rem/@base;
+    height: 52rem/@base;
+    right: 40rem/@base;
+    bottom: 34rem/@base;
+    border-radius: 45rem/@base;
+    background-color: #7e7f7d;
+    color: #fff;
+    text-align: center;
+    line-height: 52rem/@base;
+    font-size: 24rem/@base;
+    opacity: 0.8;
+    z-index: 99;
+}
+
+.dhz {
+    height: 224rem/@base;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.dhz h3 {
+    font-size: 34rem/@base;
+    margin-left: 38rem/@base;
+    margin-top: 22rem/@base;
+}
+
+.dhz p {
+    margin-left: 38rem/@base;
+    color: #666666;
+    font-size: 24rem/@base;
+}
+
+.dhz h3:last-child {
+    color: #ff6565;
+
+}
+
+.xhz {
+    height: 75rem/@base;
+    margin: 10rem/@base 0;
+    background-color: #fff;
+    color: #666666;
+    line-height: 75rem/@base;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.xhz i {
+    font-size: 24rem/@base;
+    margin-left: 35rem/@base;
+    margin-right: 36rem/@base;
+}
+
+.xhz span {
+    font-size: 20rem/@base;
+}
+
+.xhz img {
+    width: 25rem/@base;
+    height: 25rem/@base;
+    position: absolute;
+    right: 38rem/@base;
+    top: 25rem/@base;
+}
+
+.zhz {
+    // height: 186rem/@base;
+    background-color: #fff;
+    overflow: hidden;
+    color: #666666;
+    padding-top: 22rem/@base;
+    // padding-left: 35rem/@base;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 126rem/@base;
+}
+
+.zhz .h3{
+    width: 678rem/@base;
+    height: 50rem/@base;
+    display: flex;
+}
+.zhz h3 {
+    height: 50rem/@base;
+    font-size: 24rem/@base;
+    align-items: center;
+}
+
+.zhz .h3 img {
+    width: 56rem/@base;
+    height: 34rem/@base;
+    
+    
+}
+
+.zhz .xhx {
+    width: 678rem/@base;
+    height: 44rem/@base;
+    border-bottom: 1rem/@base solid #e2e2e2;
+    line-height: 44rem/@base;
+    font-size: 20rem/@base;
+    position: relative;
+}
+
+.zhz span {
+    position: absolute;
+    right: 0;
+}
+
+.dbl {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 750rem/@base;
+    height: 125rem/@base;
+    background-color: #fff;
+    border-top: 1rem/@base solid #e2e2e2;
+    text-align: center;
+    color: #fff;
+    font-size: 20rem/@base;
+    margin-top: -28rem/@base;
+}
+
+.dbl:hover {
+    cursor: pointer;
+}
+
+.dbl .circle {
+    width: 690rem/@base;
+    height: 80rem/@base;
+    background-color: #5ca9f6;
+    border-radius: 45rem/@base;
+    margin: 0 auto;
+    line-height: 80rem/@base;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zhz .img{
+    width: 678rem/@base;
+    // height: 5000px;
+    img{
+        display: block;
+        width: 100%;
+    }
+}

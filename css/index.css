@@ -1,6 +1,7 @@
 body {
   width: 10rem;
   margin: 0 auto;
+  background: #f3f3f3;
 }
 @media screen and (max-width: 320px) {
   html {
@@ -14,9 +15,10 @@ body {
 }
 .container {
   width: 100%;
-  background: #f3f3f3 url("../images/banner_01.png") no-repeat;
+  background: url("../images/banner_01.png") no-repeat;
   background-size: 100%;
   overflow: hidden;
+  margin-bottom: 1.33333333rem;
 }
 .container header {
   margin-top: 2.4rem;
@@ -26,6 +28,7 @@ body {
   top: 0;
   width: 10rem;
   height: 1.8rem;
+  z-index: 999;
 }
 .container header .top {
   display: flex;
@@ -77,6 +80,7 @@ body {
 }
 .container header .top .search input::placeholder {
   color: #a3a3a3;
+  transition: 500ms;
   padding-left: 0.53333333rem;
 }
 .container header .top .search :last-child {
@@ -174,47 +178,39 @@ body {
   background-color: #fff;
 }
 .container .fruits .f_top {
-  padding: 0.33333333rem 0.32rem 0 0.32rem;
-}
-.container .fruits .f_top .f_top_f {
+  padding: 0 0.32rem 0.37333333rem;
   display: flex;
-  width: 100%;
-  height: 1.6rem;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
-.container .fruits .f_top .f_top_f a:nth-child(1) div {
+.container .fruits .f_top a:nth-child(1) div {
   background-position: -0.93333333rem -4.25333333rem;
 }
-.container .fruits .f_top .f_top_f a:nth-child(2) div {
+.container .fruits .f_top a:nth-child(2) div {
   background-position: -2.72rem -4.25333333rem;
 }
-.container .fruits .f_top .f_top_f a:nth-child(3) div {
+.container .fruits .f_top a:nth-child(3) div {
   background-position: -4.54666667rem -4.25333333rem;
 }
-.container .fruits .f_top .f_top_f a:nth-child(4) div {
+.container .fruits .f_top a:nth-child(4) div {
   background-position: -6.34666667rem -4.25333333rem;
 }
-.container .fruits .f_top .f_top_f a:nth-child(5) div {
+.container .fruits .f_top a:nth-child(5) div {
   background-position: -0.93333333rem -6.06666667rem;
 }
-.container .fruits .f_top .f_top_l {
-  display: flex;
-  width: 100%;
-  height: 2.13333333rem;
-  margin-top: 0.48rem;
-}
-.container .fruits .f_top .f_top_l a:nth-child(1) div {
+.container .fruits .f_top a:nth-child(6) div {
   background-position: -2.72rem -6.06666667rem;
 }
-.container .fruits .f_top .f_top_l a:nth-child(2) div {
+.container .fruits .f_top a:nth-child(7) div {
   background-position: -4.54666667rem -6.06666667rem;
 }
-.container .fruits .f_top .f_top_l a:nth-child(3) div {
+.container .fruits .f_top a:nth-child(8) div {
   background-position: -6.34666667rem -6.06666667rem;
 }
-.container .fruits .f_top .f_top_l a:nth-child(4) div {
+.container .fruits .f_top a:nth-child(9) div {
   background-position: -0.93333333rem -7.89333333rem;
 }
-.container .fruits .f_top .f_top_l a:nth-child(5) div {
+.container .fruits .f_top a:nth-child(10) div {
   background-position: -2.73333333rem -7.89333333rem;
 }
 .container .fruits .f_top a {
@@ -222,11 +218,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0.33333333rem;
 }
 .container .fruits .f_top a div {
-  width: 1.06666667rem;
-  height: 1.06666667rem;
-  margin-bottom: 0.18666667rem;
+  width: 1.09333333rem;
+  height: 1.09333333rem;
   background: url("../images/10图标.png") no-repeat;
   background-size: 8.30666667rem;
 }
@@ -234,24 +230,28 @@ body {
   font-size: 0.29333333rem;
   color: #333333;
   text-align: center;
+  margin-bottom: 0.13333333rem;
+  margin-top: 0.10666667rem;
 }
-.container .fruits .f_bottom {
+.container .f_bottom {
   margin: 0 0.45333333rem;
   padding-top: 0.32rem;
   border-top: 0.01333333rem solid #e2e2e2;
   box-sizing: border-box;
   position: relative;
 }
-.container .fruits .f_bottom > a {
+.container .f_bottom > a {
   width: 0.74666667rem;
   height: 0.78666667rem;
   position: absolute;
   left: 0.2rem;
+  z-index: 1;
 }
-.container .fruits .f_bottom > a img {
+.container .f_bottom > a img {
   width: 100%;
+  vertical-align: middle;
 }
-.container .fruits .f_bottom > div {
+.container .f_bottom > div {
   width: 6.16rem;
   height: 0.88rem;
   font-size: 0.29333333rem;
@@ -261,15 +261,15 @@ body {
   padding-left: 0.2rem;
   border-left: 0.01333333rem solid #e2e2e2;
 }
-.container .fruits .f_bottom > div div {
+.container .f_bottom > div div {
   width: 100%;
   height: 0.34666667rem;
   position: relative;
 }
-.container .fruits .f_bottom > div div div {
+.container .f_bottom > div div div {
   line-height: 0.34666667rem;
 }
-.container .fruits .f_bottom > div div div span {
+.container .f_bottom > div div div span {
   float: left;
   width: 0.6rem;
   height: 0.32rem;
@@ -278,12 +278,12 @@ body {
   text-align: center;
   color: #5ca9f6;
 }
-.container .fruits .f_bottom > div div div :last-child {
+.container .f_bottom > div div div :last-child {
   color: #a3a3a3;
   border: 0;
   margin-left: 0.45333333rem;
 }
-.container .fruits .f_bottom > div div div p {
+.container .f_bottom > div div div p {
   float: left;
   width: 4.30666667rem;
   height: 0.34666667rem;
@@ -293,17 +293,17 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.container .fruits .f_bottom > div div div:first-child {
+.container .f_bottom > div div div:first-child {
   margin-bottom: 0.18666667rem;
 }
-.container .fruits .f_bottom > div > a {
+.container .f_bottom > div > a {
   position: absolute;
   width: 0.18666667rem;
   height: 0.32rem;
   right: 0.21333333rem;
   top: 0.53333333rem;
 }
-.container .fruits .f_bottom > div > a img {
+.container .f_bottom > div > a img {
   width: 100%;
 }
 .container .rob {
@@ -506,7 +506,7 @@ body {
 .container .actor {
   width: 9.46666667rem;
   margin: 0 auto;
-  margin-bottom: 0.66666667rem;
+  margin-bottom: 0.26666667rem;
 }
 .container .actor h3 {
   padding-left: 0.42666667rem;
@@ -557,6 +557,7 @@ body {
   border-top: 0.01333333rem solid #e2e2e2;
   position: fixed;
   bottom: 0;
+  z-index: 99;
 }
 .container .bot > div {
   flex: 1;
@@ -594,6 +595,6 @@ body {
   background-position: -5.86666667rem 0;
 }
 .container .bot > div:nth-child(5) div {
-  background-position: -7.85333333rem 0;
+  background-position: -7.86666667rem 0;
 }
 /*# sourceMappingURL=index.css.map */

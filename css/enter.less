@@ -1,0 +1,209 @@
+@base :75;
+
+body {
+    font-size: 20rem/@base;
+    font-family: '微软雅黑';
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    position: relative;
+    height: 1333rem/@base;
+    background: url(./../images/登录页/1bg.png) no-repeat #5ca9f6;
+
+    .meng{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0,0,0,.3);
+        display:   none;
+        .kuang{
+            font-size: 30rem/@base;
+            text-align: center;
+            margin: 50% auto ;
+            transform: translateY(50%);
+            width: 620rem/@base;
+            height: 260rem/@base;
+            line-height:130rem/@base;
+            background-color: #fff;
+            box-shadow: 0 0 10px 0 #333;
+            display: flex;
+            flex-direction: column;
+            .t{
+                flex: 1;
+                border-bottom: 1px solid #ccc;
+            }
+            .b{
+                flex: 1;
+                display: flex;
+                a{
+                    color: #000;
+                }
+                .left{
+                    flex: 1;
+                    border-right: 1px solid #ccc;
+                }
+                .right{
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    .bo1 {
+        width: 620rem/@base;
+        height: 757rem/@base;
+        position: absolute;
+        top: 447rem/@base;
+        left: 81rem/@base;
+        background-color: #beddfb;
+        border-radius: 15rem/@base;
+    }
+
+    .box {
+
+        position: absolute;
+        width: 620rem/@base;
+        height: 767rem/@base;
+        top: 417rem/@base;
+        left: 60rem/@base;
+        background-color: #ffffff;
+        z-index: 1;
+        border-radius: 15rem/@base;
+
+    }
+
+}
+
+.box {
+    font-size: 28rem/@base;
+
+    .logo {
+        width: 187rem/@base;
+        margin: 54rem/@base auto 83rem/@base;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .tel {
+        margin: 0 auto 68rem/@base;
+        width: 536rem/@base;
+        height: 80rem/@base;
+        padding: 0 38rem/@base;
+        border-radius: 40rem/@base;
+        border: 1px solid #000;
+        display: flex;
+        align-items: center;
+        color: #a3a3a3;
+        box-sizing: border-box;
+
+        .icon {
+            width: 33rem/@base;
+            height: 40rem/@base;
+            background: url(./../images/登录页/1.gif) no-repeat;
+            background-size: 100%;
+        }
+
+        input {
+            margin-left: 29rem/@base;
+            color: #a3a3a3;
+        }
+    }
+
+    .pwd {
+        margin: 0 auto 0;
+        width: 536rem/@base;
+        height: 80rem/@base;
+        padding: 0 44rem/@base 0 44rem/@base;
+        border-radius: 40rem/@base;
+        border: 1px  solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #a3a3a3;
+        box-sizing: border-box;
+
+        .icon {
+            width: 30rem/@base;
+            height: 35rem/@base;
+            background: url(./../images/登录页/2.gif) no-repeat;
+            background-size: 100%;
+        }
+
+        input {
+            margin-left: 29rem/@base;
+            width: 100%;
+            color: #a3a3a3;
+        }
+
+        .icon2 {
+            width: 45rem/@base;
+            height: 20rem/@base;
+            background: url(./../images/登录页/眼睛.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .icon2:hover{
+            cursor: pointer ;
+        }
+    }
+    
+    .wang {
+        font-size: 20rem/@base;
+        margin: 50rem/@base 0 50rem/@base 473rem/@base;
+
+        a {
+            color: #5ca9f6;
+        }
+    }
+}
+
+.queding {
+    margin: 0 auto 98rem/@base;
+    width: 536rem/@base;
+    height: 80rem/@base;
+    line-height: 80rem/@base;
+    text-align: center;
+    padding: 0 38rem/@base;
+    border-radius: 40rem/@base;
+    box-sizing: border-box;
+    background-color: #5ca9f6;
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+    }
+}

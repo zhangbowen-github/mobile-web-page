@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- 需要使用rem 所以使用 less -->
+    <link rel="stylesheet" href="./css/details.css">
+    <script src="./js/flexible.js"></script>
+
+</head>
+
+<body>
+    <div class="kb"></div>
+    <div class="jc">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/产品详情/虾1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/产品详情/虾2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/产品详情/虾3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/产品详情/虾4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/产品详情/虾5.jpg" alt=""></div>
+            </div>
+
+        </div>
+        <div class="left">
+            <img src="./img/详情-后退键.png" alt="">
+        </div>
+        <div class="shop">
+            <img src="./img/详情-购物车.png" alt="">
+            <span>0</span>
+        </div>
+        <div class="wz">
+            <span>1</span><i>/5</i>
+        </div>
+    </div>
+    <div class="dhz">
+        <h3>精选冷冻大虾&nbsp;&nbsp;400g</h3>
+        <p>精选冷冻大虾&nbsp;&nbsp;400g&nbsp;&nbsp;精选冷冻鸡大虾&nbsp;&nbsp;400g&nbsp;&nbsp;精选冷冻鸡大虾&nbsp;&nbsp;400g</p>
+        <h3>￥48.00</h3>
+    </div>
+    <div class="xhz">
+        <i>规格</i>
+        <span>已选：400g×1盒子</span>
+        <img src="./img/右箭头.png" alt="">
+    </div>
+    <div class="zhz" id="details">
+        <div class="h3">
+            <h3>商品详情</h3>
+            <img src="./img/circle.png" alt="">
+        </div>
+        <div class="xhx">
+            <i>产地</i>
+            <span>江西南昌</span>
+        </div>
+        <div class="xhx">
+            <i>规格</i>
+            <span>500g</span>
+        </div>
+        <div class="xhx">
+            <i>单位</i>
+            <span>盒</span>
+        </div>
+        <div class="img">
+            <img src="./img/产品详情/虾1.jpg" alt="">
+            <img src="./img/产品详情/虾2.jpg" alt="">
+            <img src="./img/产品详情/虾3.jpg" alt="">
+            <img src="./img/产品详情/虾4.jpg" alt="">
+            <img src="./img/产品详情/虾5.jpg" alt="">
+            <!-- <img src="./img/产品详情/虾6.jpg" alt=""> -->
+            <img src="./img/产品详情/公共底部.jpg" alt="">
+        </div>
+    </div>
+    <div class="dbl">
+        <div class="circle">加入购物车</div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/jQuery.min.js"></script>
+    <script>
+        window.onload = function () {
+
+
+            //修改开始====================================================
+            //本地储存的函数封装；
+            function local() {
+                //获取本地数据；
+                var str = localStorage.getItem('list');
+                //设定开关 判断有没有当前数据
+                var key = false
+                //判断：有则转为对象，无则为空；
+                if (str != null && str != '[]') {
+                    var arr1 = JSON.parse(str);
+
+                    arr1.forEach(function (item, index) {
+
+                        //判断当价格是58的时候把里面的数量改成当前数量
+                        if (item.numdj == 48) {
+                            //进来就说明有
+                            key = true;
+                            $('.jc .shop span').text(item.namv);
+
+                        }
+
+                    })
+                    if (key == true) {
+
+                        //当这个数据时直接返回就可以
+                        return arr1;
+                    } else if (key == false) {
+                        console.log('进到本地有数据但没有当前数据里了');
+
+                        //当没有这个数据时
+                        //直接把当前页的数据推进去
+                        var obj = {
+                            img: './images/nav3.png',
+                            name: '精选冷冻大虾',
+                            width: '500g装',
+                            numdj: 48,
+                            namv: $('.jc .shop span').text()
+                        }
+                        arr1.push(obj)
+
+
+                        return arr1
+
+                    }
+
+                } else {
+                    console.log('进到本地什么都没有里面了');
+                    
+                    //先变一个空数组
+                    var arr = [{
+                        img: './images/nav3.png',
+                        name: '精选冷冻大虾',
+                        width: '500g装',
+                        numdj: 48,
+                        namv: $('.jc .shop span').text()
+                    }]
+
+                    return arr;
+                }
+            };
+            //调用该函数；
+            var arr = local();
+
+            // var arr = [{
+            //             img: './images/nav1.png',
+            //             name: '海鲜肉百香果',
+            //             width: '600g装',
+            //             numdj: 58,
+            //             namv: $('.jc .shop span').text()
+            //         }, {
+            //             img: './images/nav3.png',
+            //             name: '精选冷冻大虾',
+            //             width: '500g装',
+            //             numdj: 48,
+            //             namv:$('.jc .shop span').text()
+            //         }, {
+            //             img: './images/nav2.png',
+            //             name: '精选冷冻鸡翅膀',
+            //             width: '400g装',
+            //             numdj: 78,
+            //             namv: $('.jc .shop span').text()
+            //         }]
+
+
+            //修改结束=============================================================
+
+
+            // 获取本地上来先判断是不是空----------------------------------------------------
+            // if (!(localStorage.getItem('list') == null)) {
+            // console.log(222222)
+            //     //有的情况
+            //     var arr1 = JSON.parse(localStorage.getItem('list'))
+            //
+            //     arr1.forEach(function (item, index) {
+            //
+            //         //判断当价格是58的时候把里面的数量改成当前数量
+            //         if (item.numdj == 48) {
+            //             $('.jc .shop span').text(item.namv);
+            //
+            //         }
+            //
+            //
+            //     })
+
+            // } else {
+            //     // 没有的清空就上传一个
+            //      localStorage.setItem('list', [])
+            //     //先上传一个数组
+            //     var arr = [{
+            //         img: './images/nav1.png',
+            //         name: '海鲜肉百香果',
+            //         width: '600g装',
+            //         numdj: 58,
+            //         namv: 0
+            //     }, {
+            //         img: './images/nav3.png',
+            //         name: '精选冷冻大虾',
+            //         width: '500g装',
+            //         numdj: 48,
+            //         namv: 0
+            //     }, {
+            //         img: './images/nav2.png',
+            //         name: '精选冷冻鸡翅膀',
+            //         width: '400g装',
+            //         numdj: 78,
+            //         namv: 0
+            //     }]
+            //
+            //     localStorage.setItem('list', JSON.stringify(arr))
+            //      console.log(89898989)
+            // }
+            // 轮播图------------------------------------------------------------
+
+
+
+            var mySwiper = new Swiper('.swiper-container', {
+
+                loop: true, // 循环模式选项
+
+                //切换显示 对应下标 最后一页切换跳转到详情
+                on: {
+                    slideChangeTransitionEnd: function (event) {
+                        console.log(this.realIndex);
+                        // if (this.realIndex == 0) {
+                        //     console.log(1111);
+
+                        //     // location.href = '#details';
+                        // }
+
+                        $('.jc .wz span').text(this.realIndex + 1)
+
+
+                    },
+
+                },
+
+            })
+
+            //点击加入购物车-------------------------------------------------------------
+            $('.dbl').click(function () {
+                //点一次增加1
+                $('.jc .shop span').text(parseFloat($('.jc .shop span').text()) + 1)
+
+
+            })
+
+            //点击购物车跳转到购物车-------------------------------------------
+            $('.jc .shop').click(function () {
+
+
+                location.href = `cart.html`;
+            })
+
+            //点击后退回主页-----------------------------------------------------
+            $('.jc .left').click(function () {
+                console.log(location.search == '?5');
+                if (location.search == '?5') {
+                    location.href = '5分类.html'
+                } else {
+                    location.href = `index.html`
+                }
+            })
+            //当页面跳转的时候将购物车中数量上传到本地-----------------------------------
+            window.onunload = function () {
+                
+                
+                arr.forEach(function (item, index) {
+
+                    //判断当价格是58的时候把里面的数量改成当前数量
+                    if (item.numdj == 48) {
+                        item.namv = $('.jc .shop span').text();
+
+                    }
+
+                })
+                // 当没有的情况
+                // if (key == false) {
+                //     //没有就新增一个
+                //     arr1.push({
+                //         img: './images/nav1.png',
+                //         name: '海鲜肉百香果',
+                //         width: '600g装',
+                //         numdj: 58,
+                //         namv: $('.jc .shop span').text()
+                //     })
+                // }
+
+
+
+                //再上传 本地
+                localStorage.setItem('list', JSON.stringify(arr))
+
+            }
+        }
+    </script>
+
+   
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 body {
   width: 10rem;
   margin: 0 auto;
+  background: #f6f6f6;
 }
 @media screen and (max-width: 320px) {
   html {
@@ -14,13 +15,16 @@ body {
 }
 .container {
   width: 10rem;
-  height: 17.78666667rem;
-  background-color: #f6f6f6;
+  overflow: hidden;
 }
 .container header {
+  width: 10rem;
   height: 1.81333333rem;
   background-color: #5ca9f6;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 .container header div {
   width: 100%;
@@ -55,39 +59,43 @@ body {
   background-position: -2.13333333rem -0.12rem;
   background-size: 2.73333333rem;
 }
-.container .indent {
+.container .dingdan {
+  margin-bottom: 1.64rem;
+  margin-top: 2.04rem;
+}
+.container .dingdan .indent {
   width: 8.8rem;
   margin: 0 auto;
-  margin-top: 0.30666667rem;
+  margin-top: 0.28rem;
   margin-bottom: 0.28rem;
   padding: 0 0.30666667rem 0 0.36rem;
   background-color: #fff;
   overflow: hidden;
 }
-.container .indent .shop {
+.container .dingdan .indent .shop {
   height: 1.13333333rem;
   margin-top: 0.30666667rem;
   margin-bottom: 0.32rem;
 }
-.container .indent .shop div:first-child {
+.container .dingdan .indent .shop div:first-child {
   float: left;
   width: 1.13333333rem;
   margin-right: 0.32rem;
 }
-.container .indent .shop div:first-child img {
+.container .dingdan .indent .shop div:first-child img {
   display: block;
   width: 100%;
 }
-.container .indent .shop div:last-child {
+.container .dingdan .indent .shop div:last-child {
   float: left;
 }
-.container .indent .shop div:last-child h5 {
+.container .dingdan .indent .shop div:last-child h5 {
   height: 0.6rem;
   font-size: 0.37333333rem;
   color: #333;
   margin: 0;
 }
-.container .indent .shop div:last-child span {
+.container .dingdan .indent .shop div:last-child span {
   height: 0.44rem;
   line-height: 0.44rem;
   text-align: center;
@@ -97,31 +105,31 @@ body {
   border: 0.01333333rem solid #ff6f6f;
   border-radius: 0.22rem;
 }
-.container .indent .shop div:last-child span:nth-of-type(1) {
+.container .dingdan .indent .shop div:last-child span:nth-of-type(1) {
   width: 1.02666667rem;
   margin-right: 0.16rem;
 }
-.container .indent .shop div:last-child span:nth-of-type(2) {
+.container .dingdan .indent .shop div:last-child span:nth-of-type(2) {
   width: 1.82666667rem;
 }
-.container .indent .cen {
+.container .dingdan .indent .cen {
   height: 0.8rem;
   position: relative;
 }
-.container .indent .cen span {
+.container .dingdan .indent .cen span {
   height: 0.8rem;
   font-size: 0.34666667rem;
   line-height: 0.34666667rem;
   color: #5ca9f6;
 }
-.container .indent .cen :first-child {
+.container .dingdan .indent .cen :first-child {
   float: left;
 }
-.container .indent .cen :nth-of-type(2) {
+.container .dingdan .indent .cen :nth-of-type(2) {
   float: right;
   margin-right: 0.6rem;
 }
-.container .indent .cen i {
+.container .dingdan .indent .cen b {
   position: absolute;
   width: 0.17333333rem;
   height: 0.29333333rem;
@@ -130,94 +138,121 @@ body {
   background: url("../images/箭头.png") no-repeat;
   background-size: 0.17333333rem;
 }
-.container .indent .fruits ul {
+.container .dingdan .indent .fruits ul {
   padding-left: 0.6rem;
   padding-right: 0.56rem;
   box-sizing: border-box;
 }
-.container .indent .fruits ul li {
+.container .dingdan .indent .fruits ul li {
   height: 1.42666667rem;
   margin-bottom: 0.45333333rem;
   position: relative;
 }
-.container .indent .fruits ul li div {
+.container .dingdan .indent .fruits ul li div {
   float: left;
 }
-.container .indent .fruits ul li div:nth-of-type(1) {
+.container .dingdan .indent .fruits ul li div:nth-of-type(1) {
   width: 1.42666667rem;
   margin-right: 0.13333333rem;
 }
-.container .indent .fruits ul li div:nth-of-type(1) img {
+.container .dingdan .indent .fruits ul li div:nth-of-type(1) img {
   width: 100%;
 }
-.container .indent .fruits ul li div:nth-of-type(2) h5 {
+.container .dingdan .indent .fruits ul li div:nth-of-type(2) h5 {
   font-size: 0.29333333rem;
   color: #333;
   line-height: 0.29333333rem;
   height: 0.33333333rem;
   margin-top: 0.08rem;
 }
-.container .indent .fruits ul li div:nth-of-type(2) h6 {
+.container .dingdan .indent .fruits ul li div:nth-of-type(2) h6 {
   font-size: 0.26666667rem;
   color: #a3a3a3;
   line-height: 0.26666667rem;
   height: 0.6rem;
 }
-.container .indent .fruits ul li div:nth-of-type(2) span:nth-of-type(1) {
-  font-size: 0.32rem;
+.container .dingdan .indent .fruits ul li div:nth-of-type(2) div {
+  width: 1.65333333rem;
+}
+.container .dingdan .indent .fruits ul li div:nth-of-type(2) div span {
+  float: left;
+  font-size: 0.4rem;
   line-height: 0.32rem;
   font-weight: bolder;
   color: #ff6565;
 }
-.container .indent .fruits ul li div:nth-of-type(2) span:nth-of-type(2) {
-  font-size: 0.24rem;
+.container .dingdan .indent .fruits ul li div:nth-of-type(2) div span:nth-child(2) {
+  margin-right: 0.05333333rem;
+}
+.container .dingdan .indent .fruits ul li div:nth-of-type(2) div span:nth-child(3) {
+  font-size: 0.26666667rem;
   color: #a3a3a3;
+  font-weight: normal;
+  margin-top: 0.04rem;
   text-decoration: line-through;
 }
-.container .indent .fruits ul li div:nth-of-type(3) {
+.container .dingdan .indent .fruits ul li div:nth-of-type(3) {
   float: right;
   width: 1.33333333rem;
   height: 0.36rem;
-  margin-right: 0.86666667rem;
+  margin-right: 0.61333333rem;
   margin-top: 0.53333333rem;
 }
-.container .indent .fruits ul li div:nth-of-type(3) i {
+.container .dingdan .indent .fruits ul li div:nth-of-type(3) i {
   float: left;
   font-size: 0.32rem;
   line-height: 0.36rem;
   font-style: normal;
   color: #333;
 }
-.container .indent .fruits ul li div:nth-of-type(3) span {
+.container .dingdan .indent .fruits ul li div:nth-of-type(3) span {
   float: left;
   width: 0.66666667rem;
   height: 0.36rem;
   font-size: 0.24rem;
   border-radius: 0.33333333rem;
   text-align: center;
-  line-height: 0.36rem;
+  line-height: 0.37333333rem;
   margin: 0 0.17333333rem;
   background-color: #ededed;
 }
-.container .indent .fruits ul li .circle {
+.container .dingdan .indent .fruits ul li div:nth-of-type(3) span input {
+  width: 0.46666667rem;
+  height: 0.26666667rem;
+  text-align: center;
+  background: #ededed;
+}
+.container .dingdan .indent .fruits ul li > input {
   position: absolute;
-  width: 0.29333333rem;
-  height: 0.29333333rem;
+  width: 0.25333333rem;
+  height: 0.25333333rem;
+  left: -0.53333333rem;
+  top: 0.60666667rem;
+}
+.container .dingdan .indent .fruits ul li .circle {
+  position: absolute;
+  width: 0.32rem;
+  height: 0.32rem;
   left: -0.6rem;
   top: 0.56666667rem;
   border: 0.01333333rem solid #696969;
   border-radius: 50%;
+  background-position: -0.02666667rem -0.02666667rem;
+  background-size: 0.38666667rem;
+  background-color: #fff;
+  pointer-events: none;
+  z-index: 5;
 }
-.container .indent .fruits ul li .circle_bo {
+.container .dingdan .indent .fruits ul li .circle_bo {
   position: absolute;
   width: 0.32rem;
   height: 0.33333333rem;
-  right: 0;
+  right: -0.24rem;
   top: 0.54666667rem;
   background: url("../images/删除.png") no-repeat;
   background-size: 0.32rem;
 }
-.container .indent .fruits ul li:last-child {
+.container .dingdan .indent .fruits ul li:last-child {
   margin-bottom: 0.12rem;
 }
 .container .close {
@@ -228,6 +263,7 @@ body {
   bottom: 0;
   justify-content: space-between;
   background-color: #fff;
+  z-index: 99;
 }
 .container .close .left {
   display: flex;
@@ -236,13 +272,25 @@ body {
   line-height: 1.33333333rem;
   margin-left: 0.64rem;
   align-items: center;
+  position: relative;
 }
-.container .close .left b {
+.container .close .left span:first-child {
+  position: absolute;
+  width: 0.32rem;
+  height: 0.32rem;
+  top: 0.50666667rem;
+  left: -0.01333333rem;
+  border-radius: 50%;
+  border: 0.02rem solid #696969;
+  background-position: -0.04rem -0.04rem;
+  background-size: 0.38666667rem;
+  background-color: #fff;
+  pointer-events: none;
+}
+.container .close .left input {
   width: 0.29333333rem;
-  height: 0.29333333rem;
-  border: 0.01333333rem solid #ff6565;
-  border-radius: 0.14666667rem;
-  vertical-align: middle;
+  height: 0.25333333rem;
+  margin-right: 0.18666667rem;
 }
 .container .close .left span {
   font-size: 0.34666667rem;

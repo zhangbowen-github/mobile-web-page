@@ -2,38 +2,44 @@
 body {
   width: 750/75rem;
   margin: 0 auto;
+  background:  rgb(243, 243, 243);
 }
 
-@no:10;
-@media screen and (max-width: 320px){
-  html{
+@no: 10;
+@media screen and (max-width: 320px) {
+  html {
     font-size: 320px/@no !important;
   }
 }
 
 @media screen and (min-width: 750px) {
-  html{
+  html {
     font-size: 750px/@no !important;
   }
 }
 
+
 //版心；
 .container {
   width: 100%;
-  background: rgb(243, 243, 243) url("../images/banner_01.png") no-repeat;
+  background: url("../images/banner_01.png") no-repeat;
   background-size: 100%;
   overflow: hidden;
+  margin-bottom: 100/75rem;
 
   //头部开始；
   header {
     margin-top: 180/75rem;
+
     .toubu {
       position: fixed;
       top: 0;
       width: 750/75rem;
       height: 135/75rem;
+      z-index: 999;
       //background-color: #5ca9f6;
     }
+
     .top {
       display: flex;
       align-items: center;
@@ -41,6 +47,7 @@ body {
       height: 53/75rem;
       padding: 0 35/75rem 0 29/75rem;
       margin-top: 58/75rem;
+      //z-index: 999 !important;
 
       a:first-child {
         width: 25/75rem;
@@ -85,9 +92,12 @@ body {
           text-align: center;
           color: #2c2c2c;
         }
+
         /*占位符选择器,修改占位符的样式*/
+
         input::placeholder {
           color: #a3a3a3;
+          transition: 500ms;
           padding-left: 40/75rem;
         }
 
@@ -102,7 +112,7 @@ body {
         }
       }
 
-      .search+a {
+      .search + a {
         width: 30/75rem;
         height: 30/75rem;
         margin-left: 21/75rem;
@@ -112,6 +122,7 @@ body {
       }
     }
   }
+
   //搜索框结束；
 
   //banner部分开始；
@@ -214,78 +225,68 @@ body {
     background-color: #fff;
 
     .f_top {
-      padding: 25/75rem 24/75rem 0 24/75rem;
+      padding: 0 24/75rem 28/75rem;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
 
-      .f_top_f {
-        display: flex;
-        width: 100%;
-        height: 120/75rem;
-
-        a:nth-child(1) {
-          div {
-            background-position: -70/75rem -319/75rem;
-          }
-        }
-
-        a:nth-child(2) {
-          div {
-            background-position: -204/75rem -319/75rem;
-          }
-        }
-
-        a:nth-child(3) {
-          div {
-            background-position: -341/75rem -319/75rem;
-          }
-        }
-
-        a:nth-child(4) {
-          div {
-            background-position: -476/75rem -319/75rem;
-          }
-        }
-
-        a:nth-child(5) {
-          div {
-            background-position: -70/75rem -455/75rem;
-          }
+      a:nth-child(1) {
+        div {
+          background-position: -70/75rem -319/75rem;
         }
       }
 
-      .f_top_l {
-        display: flex;
-        width: 100%;
-        height: 160/75rem;
-        margin-top: 36/75rem;
-
-        a:nth-child(1) {
-          div {
-            background-position: -204/75rem -455/75rem;
-          }
+      a:nth-child(2) {
+        div {
+          background-position: -204/75rem -319/75rem;
         }
+      }
 
-        a:nth-child(2) {
-          div {
-            background-position: -341/75rem -455/75rem;
-          }
+      a:nth-child(3) {
+        div {
+          background-position: -341/75rem -319/75rem;
         }
+      }
 
-        a:nth-child(3) {
-          div {
-            background-position: -476/75rem -455/75rem;
-          }
+      a:nth-child(4) {
+        div {
+          background-position: -476/75rem -319/75rem;
         }
+      }
 
-        a:nth-child(4) {
-          div {
-            background-position: -70/75rem -592/75rem;
-          }
+      a:nth-child(5) {
+        div {
+          background-position: -70/75rem -455/75rem;
         }
+      }
 
-        a:nth-child(5) {
-          div {
-            background-position: -205/75rem -592/75rem;
-          }
+      a:nth-child(6) {
+        div {
+          background-position: -204/75rem -455/75rem;
+        }
+      }
+
+      a:nth-child(7) {
+        div {
+          background-position: -341/75rem -455/75rem;
+        }
+      }
+
+      a:nth-child(8) {
+        div {
+          background-position: -476/75rem -455/75rem;
+        }
+      }
+
+      a:nth-child(9) {
+        div {
+          background-position: -70/75rem -592/75rem;
+        }
+      }
+
+      a:nth-child(10) {
+        div {
+          background-position: -205/75rem -592/75rem;
         }
       }
 
@@ -294,11 +295,11 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 25/75rem;
 
         div {
-          width: 80/75rem;
-          height: 80/75rem;
-          margin-bottom: 14/75rem;
+          width: 82/75rem;
+          height: 82/75rem;
           background: url("../images/10图标.png") no-repeat;
           background-size: 623/75rem;
         }
@@ -307,93 +308,98 @@ body {
           font-size: 22/75rem;
           color: #333333;
           text-align: center;
+          margin-bottom: 10/75rem;
+          margin-top: 8/75rem;
         }
       }
     }
+  }
 
-    .f_bottom {
-      margin: 0 34/75rem;
-      padding-top: 24/75rem;
-      border-top: 1/75rem solid #e2e2e2;
-      box-sizing: border-box;
-      position: relative;
+  .f_bottom {
+    margin: 0 34/75rem;
+    padding-top: 24/75rem;
+    border-top: 1/75rem solid #e2e2e2;
+    box-sizing: border-box;
+    position: relative;
+
+    > a {
+      width: 56/75rem;
+      height: 59/75rem;
+      position: absolute;
+      left: 15/75rem;
+      z-index: 1;
+
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    > div {
+      width: 462/75rem;
+      height: 66/75rem;
+      font-size: 22/75rem;
+      color: #a3a3a3;
+      display: inline-block;
+      margin-left: 112/75rem;
+      padding-left: 15/75rem;
+      border-left: 1/75rem solid #e2e2e2;
+
+      div {
+        width: 100%;
+        height: 26/75rem;
+        position: relative;
+
+        div {
+          line-height: 26/75rem;
+
+          span {
+            float: left;
+            width: 45/75rem;
+            height: 24/75rem;
+            font-size: 18/75rem;
+            border: 1/75rem solid #5ca9f6;
+            text-align: center;
+            color: #5ca9f6;
+          }
+
+          :last-child {
+            color: #a3a3a3;
+            border: 0;
+            margin-left: 34/75rem;
+          }
+
+          p {
+            float: left;
+            width: 323/75rem;
+            height: 26/75rem;
+            line-height: 26/75rem;
+            margin-left: 9/75rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        div:first-child {
+          margin-bottom: 14/75rem;
+        }
+      }
 
       > a {
-        width: 56/75rem;
-        height: 59/75rem;
         position: absolute;
-        left: 15/75rem;
+        width: 14/75rem;
+        height: 24/75rem;
+        right: 16/75rem;
+        top: 40/75rem;
 
         img {
           width: 100%;
         }
       }
-
-      > div {
-        width: 462/75rem;
-        height: 66/75rem;
-        font-size: 22/75rem;
-        color: #a3a3a3;
-        display: inline-block;
-        margin-left: 112/75rem;
-        padding-left: 15/75rem;
-        border-left: 1/75rem solid #e2e2e2;
-
-        div {
-          width: 100%;
-          height: 26/75rem;
-          position: relative;
-
-          div {
-            line-height: 26/75rem;
-
-            span {
-              float: left;
-              width: 45/75rem;
-              height: 24/75rem;
-              font-size: 18/75rem;
-              border: 1/75rem solid #5ca9f6;
-              text-align: center;
-              //line-height: 24/75rem;
-              color: #5ca9f6;
-            }
-
-            :last-child {
-              color: #a3a3a3;
-              border: 0;
-              margin-left: 34/75rem;
-            }
-
-            p {
-              float: left;
-              width: 323/75rem;
-              height: 26/75rem;
-              line-height: 26/75rem;
-              margin-left: 9/75rem;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            }
-          }
-
-          div:first-child {
-            margin-bottom: 14/75rem;
-          }
-        }
-
-        > a {
-          position: absolute;
-          width: 14/75rem;
-          height: 24/75rem;
-          right: 16/75rem;
-          top: 40/75rem;
-          img {
-            width: 100%;
-          }
-        }
-      }
     }
   }
+
 
   //现实抢购开始；
   .rob {
@@ -633,7 +639,7 @@ body {
   .actor {
     width: 710/75rem;
     margin: 0 auto;
-    margin-bottom: 50/75rem;
+    margin-bottom: 20/75rem;
 
     h3 {
       padding-left: 32/75rem;
@@ -691,6 +697,7 @@ body {
     border-top: 1/75rem solid #e2e2e2;
     position: fixed;
     bottom: 0;
+    z-index: 99;
 
     > div {
       flex: 1;
@@ -745,8 +752,9 @@ body {
 
     > div:nth-child(5) {
       div {
-        background-position: -589/75rem 0;
+        background-position: -590/75rem 0;
       }
     }
   }
+
 }

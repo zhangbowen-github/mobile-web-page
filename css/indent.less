@@ -1,0 +1,309 @@
+@base:75;
+// @media screen and (max-width: 450px) {
+//     .info .top .txt span, .info .top .txt i{
+//         padding: 0 !important;
+//     }
+    
+// }
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+body{
+    font-size: 20rem/@base !important;
+}
+.container {
+    height: 1500rem/@base;
+   background-color: #f6f6f6;
+   .fixed{
+       position: fixed;
+       top: 0;
+       width: 750rem/@base;
+       z-index: 99;
+   }
+}
+
+// 顶部------------------------------
+.dingdan {
+    width: 100%;
+    height: 135rem/@base;
+    background-color: #5ca9f6;
+    display: flex;
+    justify-content: space-between;
+
+    .tex {
+        font-size: 38rem/@base;
+        font-weight: 600;
+        margin-top: 67rem/@base;
+        margin-left: 38rem/@base;
+        color: #ffffff;
+
+    }
+
+    .ling {
+        margin-right: 34rem/@base;
+        margin-top: 71rem/@base;
+        width: 30rem/@base;
+        height: 31rem/@base;
+        background: url(./../images/订单/铃铛.png);
+        background-size: 100%;
+    }
+    .ling:hover {
+        cursor: pointer;
+    }
+
+
+}
+
+//导航---------------------------------
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 83rem/@base;
+    line-height: 82rem/@base;
+    background-color: #d7e7f6;
+    white-space: nowrap;
+    font-size: 28rem/@base;
+    color: #5ca9f6;
+    div{
+        position: relative;
+    }
+    .all {
+        margin-left: 38rem/@base;
+        width: 125rem/@base;
+        height: 82rem/@base;
+        text-align: center;
+       
+        
+
+        // p {
+        //     width: 125rem/@base;
+        //     transform: translateX(-8rem/@base);
+        // }
+        span{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            height: 3rem/@base;
+            width: 107rem/@base;
+            background-color: #5ca9f6;
+        }
+
+
+
+    }
+    .all:hover {
+        cursor: pointer;
+    }
+    .select{
+        font-size: 32rem/@base !important;
+        font-weight: 700 !important;
+    }
+
+    .daiping {
+        margin-left: 84rem/@base;
+        span{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3rem/@base;
+            width: 62rem/@base;
+            background-color: #5ca9f6;
+        }
+    }
+    .daiping:hover {
+        cursor: pointer;
+    }
+
+    .tui {
+        margin-left: 80rem/@base;
+        span{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3rem/@base;
+            width: 42rem/@base;
+            background-color: #5ca9f6;
+        }
+    }
+    .tui:hover {
+        cursor: pointer;
+    }
+}
+.conte{
+    margin-top: 218rem/@base;
+    overflow: hidden;
+}
+//订单信息-----------------------------
+.info {
+    margin: 22rem/@base auto;
+    width: 709rem/@base;
+    height: 333rem/@base;
+    box-shadow: 0 0 10rem/@base 0 #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23rem/@base;
+
+    .top,
+    .bottom {
+        width: 655rem/@base;
+    }
+
+    // 上面的盒子-----------------
+    .top {
+        position: relative;
+        border-bottom: 1rem/@base solid #e2e2e2;
+        display: flex;
+
+        // justify-content: space-between;
+        .img {
+            width: 85rem/@base;
+            height: 85rem/@base;
+            margin-right: 25rem/@base;
+            margin-bottom: 30rem/@base;
+
+            img {
+                width: 100%;
+            }
+        }
+        //上海等文字
+        .txt {
+            // width: 320rem/@base;
+            // margin-right: auto;
+
+            p {
+                font-size: 26rem/@base;
+                margin-bottom: 20rem/@base;
+            }
+            // div{
+            //     // display: flex;
+            //     // width: 228rem/@base;
+            //     // justify-content: space-between;
+            // }
+
+            span,
+            i {
+                display: inline-block;
+                height: 32rem/@base;
+                line-height: 32rem/@base;
+                border-radius: 16rem/@base;
+                border: 1px solid #ff6565;
+                color: #ff6565;
+                font-size: 18rem/@base;
+                padding: 0 12rem/@base;
+            }
+
+            
+        }
+
+        .wang {
+            position: absolute;
+            top: 28rem/@base;
+            right: 0;
+            // margin-left: 524rem/@base;
+            font-size: 22rem/@base;
+           
+            span {
+                display: inline-block;
+                transform: scaleY(1.5);
+            }
+
+        }
+        .wang:hover {
+            cursor: pointer;
+        }
+
+    }
+    //下面的盒子
+    .bottom {
+        //底部的顶部
+        .ding {
+            margin-top: 35rem/@base;
+            font-size: 25rem/@base;
+            display: flex;
+            padding-right: 10rem/@base;
+            .wawa{
+                margin-right: auto;
+                span{
+                    margin-left: 25rem/@base;
+                    color: #999999;
+                }
+            }
+        }
+        //底部的中部
+        .mid{
+            margin-bottom: 30rem/@base;
+            margin-top: 22rem/@base;
+            font-size: 22rem/@base;
+            color: #999999;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10rem/@base;
+            p:hover {
+                cursor: pointer;
+            }
+        }
+
+        //底部的下部
+        .xia{
+            display: flex;
+            justify-content: flex-end;
+            .tuikuan{
+                width: 84rem/@base;
+                height: 46rem/@base;
+                line-height: 46rem/@base;
+                border-radius: 23rem/@base;
+                border: 1px solid #ff6565;
+                color: #ff6565;
+                text-align: center;
+                font-size: 20rem/@base;
+            }
+            .pingjia{
+                margin-left: 25rem/@base;
+                // width: 88rem/@base;
+                line-height: 48rem/@base;
+                border-radius: 23rem/@base;
+                padding-left: 20rem /@base;
+                padding-right: 20rem /@base;
+                text-align: center;
+                font-size: 20rem/@base;
+                color: #fff;
+                background-color: #5ca9f6;
+            }
+            .pingjia:hover {
+                cursor: pointer;
+            }
+            .tuikuan:hover {
+                cursor: pointer;
+            }
+            
+        }
+
+    }
+}

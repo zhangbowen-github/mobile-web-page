@@ -1,0 +1,241 @@
+img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+i,
+em {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+body {
+  font-size: 0.26666667rem !important;
+}
+.container {
+  height: 20rem;
+  background-color: #f6f6f6;
+}
+.container .fixed {
+  position: fixed;
+  top: 0;
+  width: 10rem;
+  z-index: 99;
+}
+.dingdan {
+  width: 100%;
+  height: 1.8rem;
+  background-color: #5ca9f6;
+  display: flex;
+  justify-content: space-between;
+}
+.dingdan .tex {
+  font-size: 0.50666667rem;
+  font-weight: 600;
+  margin-top: 0.89333333rem;
+  margin-left: 0.50666667rem;
+  color: #ffffff;
+}
+.dingdan .ling {
+  margin-right: 0.45333333rem;
+  margin-top: 0.94666667rem;
+  width: 0.4rem;
+  height: 0.41333333rem;
+  background: url(../images/订单/铃铛.png);
+  background-size: 100%;
+}
+.dingdan .ling:hover {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.10666667rem;
+  line-height: 1.09333333rem;
+  background-color: #d7e7f6;
+  white-space: nowrap;
+  font-size: 0.37333333rem;
+  color: #5ca9f6;
+}
+nav div {
+  position: relative;
+}
+nav .all {
+  margin-left: 0.50666667rem;
+  width: 1.66666667rem;
+  height: 1.09333333rem;
+  text-align: center;
+}
+nav .all span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  height: 0.04rem;
+  width: 1.42666667rem;
+  background-color: #5ca9f6;
+}
+nav .all:hover {
+  cursor: pointer;
+}
+nav .select {
+  font-size: 0.42666667rem !important;
+  font-weight: 700 !important;
+}
+nav .daiping {
+  margin-left: 1.12rem;
+}
+nav .daiping span {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.04rem;
+  width: 0.82666667rem;
+  background-color: #5ca9f6;
+}
+nav .daiping:hover {
+  cursor: pointer;
+}
+nav .tui {
+  margin-left: 1.06666667rem;
+}
+nav .tui span {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.04rem;
+  width: 0.56rem;
+  background-color: #5ca9f6;
+}
+nav .tui:hover {
+  cursor: pointer;
+}
+.conte {
+  margin-top: 2.90666667rem;
+  overflow: hidden;
+}
+.info {
+  margin: 0.29333333rem auto;
+  width: 9.45333333rem;
+  height: 4.44rem;
+  box-shadow: 0 0 0.13333333rem 0 #ccc;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.30666667rem;
+}
+.info .top,
+.info .bottom {
+  width: 8.73333333rem;
+}
+.info .top {
+  position: relative;
+  border-bottom: 0.01333333rem solid #e2e2e2;
+  display: flex;
+}
+.info .top .img {
+  width: 1.13333333rem;
+  height: 1.13333333rem;
+  margin-right: 0.33333333rem;
+  margin-bottom: 0.4rem;
+}
+.info .top .img img {
+  width: 100%;
+}
+.info .top .txt p {
+  font-size: 0.34666667rem;
+  margin-bottom: 0.26666667rem;
+}
+.info .top .txt span,
+.info .top .txt i {
+  display: inline-block;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  border-radius: 0.21333333rem;
+  border: 1px solid #ff6565;
+  color: #ff6565;
+  font-size: 0.24rem;
+  padding: 0 0.16rem;
+}
+.info .top .wang {
+  position: absolute;
+  top: 0.37333333rem;
+  right: 0;
+  font-size: 0.29333333rem;
+}
+.info .top .wang span {
+  display: inline-block;
+  transform: scaleY(1.5);
+}
+.info .top .wang:hover {
+  cursor: pointer;
+}
+.info .bottom .ding {
+  margin-top: 0.46666667rem;
+  font-size: 0.33333333rem;
+  display: flex;
+  padding-right: 0.13333333rem;
+}
+.info .bottom .ding .wawa {
+  margin-right: auto;
+}
+.info .bottom .ding .wawa span {
+  margin-left: 0.33333333rem;
+  color: #999999;
+}
+.info .bottom .mid {
+  margin-bottom: 0.4rem;
+  margin-top: 0.29333333rem;
+  font-size: 0.29333333rem;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0.13333333rem;
+}
+.info .bottom .mid p:hover {
+  cursor: pointer;
+}
+.info .bottom .xia {
+  display: flex;
+  justify-content: flex-end;
+}
+.info .bottom .xia .tuikuan {
+  width: 1.12rem;
+  height: 0.61333333rem;
+  line-height: 0.61333333rem;
+  border-radius: 0.30666667rem;
+  border: 1px solid #ff6565;
+  color: #ff6565;
+  text-align: center;
+  font-size: 0.26666667rem;
+}
+.info .bottom .xia .pingjia {
+  margin-left: 0.33333333rem;
+  line-height: 0.64rem;
+  border-radius: 0.30666667rem;
+  padding-left: 0.26666667rem;
+  padding-right: 0.26666667rem;
+  text-align: center;
+  font-size: 0.26666667rem;
+  color: #fff;
+  background-color: #5ca9f6;
+}
+.info .bottom .xia .pingjia:hover {
+  cursor: pointer;
+}
+.info .bottom .xia .tuikuan:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=indent.css.map */

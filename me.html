@@ -7,8 +7,8 @@
     <title>萝卜生鲜网</title>
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="./js/nprogress.css">
     <link href="./css/me.css" rel="stylesheet">
-    <script src="./js/flexible.js"></script>
 </head>
 <body>
 <!--版心；-->
@@ -119,4 +119,28 @@
 </div>
 
 </body>
+<script src="./js/flexible.js"></script>
+<script src="./js/jQuery.min.js"></script>
+<script src="./js/nprogress.js"></script>
+<script>
+    $(function () {
+        //底部导航栏跳转；
+        $('.bot>div').click(function () {
+            var ind = $(this).index();
+            if (ind == 0) {
+                location.href='./index.html';
+            } else if (ind == 1) {
+                location.href='./5分类.html'
+            } else if (ind == 2) {
+                location.href='./食谱.html'
+            } else if (ind == 3) {
+                location.href='./indent(订单).html'
+            }else if (ind == 4) {
+                return;
+            }
+        })
+    })
+
+
+</script>
 </html>

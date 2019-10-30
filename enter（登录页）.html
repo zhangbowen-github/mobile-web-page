@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bese.css">
+    <link rel="stylesheet" href="./css/enter.css">
+    <script src="./js/flexible.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 蒙版-->
+        <div class="meng">
+            <!-- 提示框 -->
+            <div class="kuang">
+                <div class="t">
+                    手机号或密码不正确
+                </div>
+                <div class="b">
+                    <div class="left">
+                        <a href="javascript:;">确认</a>
+                    </div>
+                    <div class="right">
+                        <a href="javascript:;">找回密码</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="logo">
+                <img src="./images/登录页/logo.gif" alt="">
+            </div>
+            <div class="tel">
+                <div class="icon"></div>
+                <input type="text" value="请输入手机号">
+            </div>
+            <div class="pwd">
+                <div class="icon"></div>
+                <input type="text" value="请输入密码">
+                <div class="icon2"> </div>
+            </div>
+            <div class="wang">
+                <a href="">忘记密码？</a>
+
+            </div>
+            <div class="queding">
+                <a href="#">确定</a>
+            </div>
+        </div>
+        <div class="bo1">
+        </div>
+    </div>
+
+
+    <script src="./js/jQuery.min.js"></script>
+    <script>
+
+
+        // 登录面一上来先清空一下本地
+        localStorage.clear();
+
+        // 当input获取焦点时 清空内容
+        // 手机框
+        $('.tel input').focus(function () {
+            if ($(this).val() == '请输入手机号') {
+                $(this).val('');
+            }
+
+        })
+        $('.tel input').blur(function () {
+            if ($(this).val() == '') {
+                $(this).val('请输入手机号');
+            }
+        })
+        // 密码框
+        $('.pwd input').focus(function () {
+            //先判断在清空
+            if ($(this).val() == '请输入密码') {
+                $(this).val('');
+                $(this).prop('type', 'password');
+                $(this).siblings('.icon2').css({
+                    "background-image": 'url(./images/登录页/1_r3_c3.gif)',
+
+                })
+            }
+        })
+        $('.pwd input').blur(function () {
+            if ($(this).val() == '') {
+                $(this).prop('type', 'text');
+                $(this).val('请输入密码');
+                $(this).siblings('.icon2').css({
+                    "background-image": 'url(./images/登录页/眼睛.png)',
+
+                })
+            }
+        })
+
+
+
+        //点击眼睛换图同时 输入框变成对应的txt还是pwd 同时背景图片变换
+        $('.box .pwd .icon2').on('click', function (e) {
+            //  判断当前输入框类型
+            if ($(this).siblings('input').prop('type') === 'text') {
+
+                $(this).siblings('input').prop('type', 'password');
+                $(this).css({
+                    "background-image": 'url(./images/登录页/1_r3_c3.gif)',
+                })
+                //判断输入框有请输入密码，就清空输入框
+                if($(this).siblings('input').val() == '请输入密码'){
+                    $(this).siblings('input').val('');
+                }
+            } else {
+                $(this).siblings('input').prop('type', 'text')
+                $(this).css({
+                    "background-image": 'url(./images/登录页/眼睛.png)',
+                })
+                //判断输入框 是空的 就来个请输入密码
+                if($(this).siblings('input').val() == ''){
+                    $(this).siblings('input').val('请输入密码');
+                }
+            }
+
+        })
+
+        //点击确定
+        $('.queding').click(function (e) {
+            e.preventDefault();
+            //判断手机输入框是否正确
+            if (!/^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/.test($('.tel input').val())) {
+                //不对显示提示框
+                $('.meng').show()
+
+                return;
+            }else {
+                location.href='./index.html';
+            }
+        })
+        $('.meng .kuang .b a').click(function () {
+            //点击确定在隐藏提示框
+            $('.meng').hide()
+        })
+    </script>
+</body>
+
+</html>
